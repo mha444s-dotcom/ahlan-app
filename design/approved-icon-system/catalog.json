@@ -1,0 +1,850 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "reference/approved-board.png",
+  "commonPrompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. ",
+  "assets": [
+    {
+      "name": "home",
+      "label": "الرئيسية",
+      "subject": "",
+      "mode": "reuse",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: "
+    },
+    {
+      "name": "nearby",
+      "label": "قريب منك",
+      "subject": "A simple thick faceted navigation arrow pointing diagonally up-right, decisive triangular silhouette with a V notch, warm cream front, brown shaded side and a narrow turquoise edge. Not a location pin, map, paper airplane or house.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: A simple thick faceted navigation arrow pointing diagonally up-right, decisive triangular silhouette with a V notch, warm cream front, brown shaded side and a narrow turquoise edge. Not a location pin, map, paper airplane or house."
+    },
+    {
+      "name": "heart",
+      "label": "إضافة للمفضلة",
+      "subject": "One symmetric OPEN HEART outline with a wide warm-brown body and a restrained brushed-gold edge, a fully empty transparent center. Very few broad shapes; immediately readable at 24px.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One symmetric OPEN HEART outline with a wide warm-brown body and a restrained brushed-gold edge, a fully empty transparent center. Very few broad shapes; immediately readable at 24px."
+    },
+    {
+      "name": "heart-filled",
+      "label": "عنصر محفوظ في المفضلة",
+      "subject": "One symmetric SOLID HEART, filled turquoise inset face with a fine warm-gold rim and brown shaded depth. Its center is filled, visibly different from the open favorite heart. Keep silhouette and orientation aligned to the open heart.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One symmetric SOLID HEART, filled turquoise inset face with a fine warm-gold rim and brown shaded depth. Its center is filled, visibly different from the open favorite heart. Keep silhouette and orientation aligned to the open heart."
+    },
+    {
+      "name": "plan",
+      "label": "خطتي",
+      "subject": "Isolate the clipboard in MIDDLE ROW COLUMN 3 of the reference: brown board, ivory page, gold clip and turquoise seal. Preserve the reference design. This is an itinerary checklist, not a loose document sheet.",
+      "mode": "extract",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: Isolate the clipboard in MIDDLE ROW COLUMN 3 of the reference: brown board, ivory page, gold clip and turquoise seal. Preserve the reference design. This is an itinerary checklist, not a loose document sheet. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "profile",
+      "label": "حسابي",
+      "subject": "Isolate the simple user silhouette in BOTTOM ROW COLUMN 4: cream round head, brown shoulders, a fine gold line and turquoise base. Preserve its exact reference design, proportions and materials.",
+      "mode": "extract",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: Isolate the simple user silhouette in BOTTOM ROW COLUMN 4: cream round head, brown shoulders, a fine gold line and turquoise base. Preserve its exact reference design, proportions and materials. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "search",
+      "label": "البحث",
+      "subject": "Isolate the magnifying glass in BOTTOM ROW COLUMN 2: fine gold circular lens frame, clean pale blue transparent glass, brown handle and fine navy/gold joins. Preserve its exact reference design.",
+      "mode": "extract",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: Isolate the magnifying glass in BOTTOM ROW COLUMN 2: fine gold circular lens frame, clean pale blue transparent glass, brown handle and fine navy/gold joins. Preserve its exact reference design. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "location",
+      "label": "الموقع والمدينة",
+      "subject": "One bold location/map pin: cream body with a clearly open round center, warm-brown side and a fine turquoise inner rim. Front-biased shallow depth, unmistakable pointed bottom, readable at 16px. No map, compass or backdrop.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One bold location/map pin: cream body with a clearly open round center, warm-brown side and a fine turquoise inner rim. Front-biased shallow depth, unmistakable pointed bottom, readable at 16px. No map, compass or backdrop."
+    },
+    {
+      "name": "language",
+      "label": "اختيار اللغة",
+      "subject": "One compact cream globe with three broad navy meridian bands and a restrained gold equator, shallow realistic material depth. A language/world globe, no speech bubbles, lettering, stand or detailed tiny continents.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One compact cream globe with three broad navy meridian bands and a restrained gold equator, shallow realistic material depth. A language/world globe, no speech bubbles, lettering, stand or detailed tiny continents."
+    },
+    {
+      "name": "assistant",
+      "label": "مساعد أهلاً الذكي",
+      "subject": "A recognizable ROBOT ASSISTANT bust, NOT a speech bubble or chat symbol: compact cream machine head, precise mildly beveled edges, two calm turquoise lens eyes in a navy visor, short warm-brown ear modules and simple cream shoulders. One tiny brushed-gold LOTUS detail centered on a narrow navy forehead band is the ONLY pharaonic touch. No royal headdress, crown, human face, exaggerated smile, antenna clutter, tiny decorations or toy-like inflated round head. Same restrained premium materials and proportions as the approved icon board, mature and friendly.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: A recognizable ROBOT ASSISTANT bust, NOT a speech bubble or chat symbol: compact cream machine head, precise mildly beveled edges, two calm turquoise lens eyes in a navy visor, short warm-brown ear modules and simple cream shoulders. One tiny brushed-gold LOTUS detail centered on a narrow navy forehead band is the ONLY pharaonic touch. No royal headdress, crown, human face, exaggerated smile, antenna clutter, tiny decorations or toy-like inflated round head. Same restrained premium materials and proportions as the approved icon board, mature and friendly."
+    },
+    {
+      "name": "emergency",
+      "label": "الطوارئ",
+      "subject": "One compact amber-gold emergency beacon with a cream base, fine brown lower edge and two short gold light rays. A clear urgent warning lamp, not a medical bag, chatbot, flame or bell.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One compact amber-gold emergency beacon with a cream base, fine brown lower edge and two short gold light rays. A clear urgent warning lamp, not a medical bag, chatbot, flame or bell."
+    },
+    {
+      "name": "arrow",
+      "label": "الانتقال والرجوع",
+      "subject": "One bold RIGHT-POINTING straight arrow with a broad warm-brown front, fine gold bevel and shallow realistic solid depth. No tile, ring, flourish or curve. Keep arrow readable at 12–20px; simplify strongly.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One bold RIGHT-POINTING straight arrow with a broad warm-brown front, fine gold bevel and shallow realistic solid depth. No tile, ring, flourish or curve. Keep arrow readable at 12–20px; simplify strongly."
+    },
+    {
+      "name": "external",
+      "label": "رابط خارجي",
+      "subject": "Universal external-link symbol: one bold turquoise diagonal UP-RIGHT arrow emerging from a simple warm-brown open square outline. Shallow precise thickness, fine restrained gold edge. Very broad shapes readable at 20px. No tile.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: Universal external-link symbol: one bold turquoise diagonal UP-RIGHT arrow emerging from a simple warm-brown open square outline. Shallow precise thickness, fine restrained gold edge. Very broad shapes readable at 20px. No tile."
+    },
+    {
+      "name": "close",
+      "label": "إغلاق",
+      "subject": "One bold X formed from two equal straight warm-brown diagonal bars, tiny restrained gold edge, shallow precise tangible thickness. No ring, tile, decoration or additional objects; clear at 16px.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One bold X formed from two equal straight warm-brown diagonal bars, tiny restrained gold edge, shallow precise tangible thickness. No ring, tile, decoration or additional objects; clear at 16px."
+    },
+    {
+      "name": "plus",
+      "label": "إضافة",
+      "subject": "One bold equal-armed PLUS with a turquoise face, warm-brown depth and a fine gold bevel. Front-biased view, clean decisive silhouette, readable at 16px. No tile or badge.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One bold equal-armed PLUS with a turquoise face, warm-brown depth and a fine gold bevel. Front-biased view, clean decisive silhouette, readable at 16px. No tile or badge."
+    },
+    {
+      "name": "check",
+      "label": "تأكيد",
+      "subject": "One broad CHECKMARK with short left arm and long rising right arm, muted turquoise front face and restrained warm-gold edge. Front-biased shallow physical depth, no badge or circle, clear at 16px.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One broad CHECKMARK with short left arm and long rising right arm, muted turquoise front face and restrained warm-gold edge. Front-biased shallow physical depth, no badge or circle, clear at 16px."
+    },
+    {
+      "name": "star",
+      "label": "تقييم",
+      "subject": "One balanced FIVE-POINT rating STAR in restrained brushed gold with shallow warm-brown side depth, crisp silhouette and small controlled highlights. No face, rays or extra stars.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One balanced FIVE-POINT rating STAR in restrained brushed gold with shallow warm-brown side depth, crisp silhouette and small controlled highlights. No face, rays or extra stars."
+    },
+    {
+      "name": "egypt",
+      "label": "مصر",
+      "subject": "A single small Egyptian national flag on a short brown pole. Correct red upper stripe, white middle stripe, black bottom stripe, a tiny plain gold center mark without lettering. The national flag colors are necessary semantic exceptions; do not recolor the flag cream or turquoise. Restrained realistic fabric, modest wave, not an entire scene.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: A single small Egyptian national flag on a short brown pole. Correct red upper stripe, white middle stripe, black bottom stripe, a tiny plain gold center mark without lettering. The national flag colors are necessary semantic exceptions; do not recolor the flag cream or turquoise. Restrained realistic fabric, modest wave, not an entire scene."
+    },
+    {
+      "name": "document",
+      "label": "المستندات",
+      "subject": "One ivory DOCUMENT SHEET with one folded corner, warm-brown thin edge and two broad brown recessed horizontal content strokes. One small turquoise tab. No clipboard, clip, badge, official seals or legible letters. Clear at 20px.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One ivory DOCUMENT SHEET with one folded corner, warm-brown thin edge and two broad brown recessed horizontal content strokes. One small turquoise tab. No clipboard, clip, badge, official seals or legible letters. Clear at 20px."
+    },
+    {
+      "name": "phone",
+      "label": "اتصال",
+      "subject": "One recognizable TELEPHONE HANDSET in warm brown and cream, simple broad curved receiver with a fine gold join. No cord, display, vintage base, headset, speech bubble or ornament. Clear at 20px.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One recognizable TELEPHONE HANDSET in warm brown and cream, simple broad curved receiver with a fine gold join. No cord, display, vintage base, headset, speech bubble or ornament. Clear at 20px."
+    },
+    {
+      "name": "shield",
+      "label": "الثقة والأمان",
+      "subject": "One broad cream SHIELD with warm-brown edge and a large turquoise checkmark inset. Fine gold outline, a clearly pointed bottom. No official insignia, eagle, badge text or elaborate ornament.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One broad cream SHIELD with warm-brown edge and a large turquoise checkmark inset. Fine gold outline, a clearly pointed bottom. No official insignia, eagle, badge text or elaborate ornament."
+    },
+    {
+      "name": "bell",
+      "label": "التذكيرات",
+      "subject": "One notification BELL with warm brushed-gold dome, brown upper loop and small turquoise clapper. Controlled metal gleam, no alarm lamp, numeric badge, motion rays or surrounding tile.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One notification BELL with warm brushed-gold dome, brown upper loop and small turquoise clapper. Controlled metal gleam, no alarm lamp, numeric badge, motion rays or surrounding tile."
+    },
+    {
+      "name": "edit",
+      "label": "تعديل",
+      "subject": "One short thick PENCIL angled diagonally up-right: brown wood body, cream sharpened tip, dark graphite point, tiny gold rear ferrule and turquoise cap. Broad clean silhouette, no paper or writing.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One short thick PENCIL angled diagonally up-right: brown wood body, cream sharpened tip, dark graphite point, tiny gold rear ferrule and turquoise cap. Broad clean silhouette, no paper or writing."
+    },
+    {
+      "name": "trash",
+      "label": "حذف",
+      "subject": "One small cream TRASH BIN with warm-brown flat lid and handle, two broad vertical brown recessed grooves and a fine gold rim. Clear at 20px, no garbage, lettering or recycling emblem.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One small cream TRASH BIN with warm-brown flat lid and handle, two broad vertical brown recessed grooves and a fine gold rim. Clear at 20px, no garbage, lettering or recycling emblem."
+    },
+    {
+      "name": "support",
+      "label": "مساعدة شخصية",
+      "subject": "One recognizable human-support HEADSET with warm-brown headband, cream ear cushions, a short clearly visible microphone boom and fine turquoise/gold joins. No face, robot or speech bubble.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One recognizable human-support HEADSET with warm-brown headband, cream ear cushions, a short clearly visible microphone boom and fine turquoise/gold joins. No face, robot or speech bubble."
+    },
+    {
+      "name": "wave",
+      "label": "ترحيب",
+      "subject": "One simple open greeting HAND, ivory ceramic-like material with warm-brown depth and a restrained turquoise cuff. Five naturally proportioned fingers, palm front-biased, mature neutral gesture, no cartoon puffiness or waving rays.",
+      "mode": "generate",
+      "group": "ui",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. This is a SMALL UI symbol: prioritize a bold unambiguous silhouette over fine details. Requested single subject: One simple open greeting HAND, ivory ceramic-like material with warm-brown depth and a restrained turquoise cuff. Five naturally proportioned fingers, palm front-biased, mature neutral gesture, no cartoon puffiness or waving rays."
+    },
+    {
+      "name": "procedures",
+      "label": "الإجراءات والتأشيرات",
+      "subject": "One closed warm-brown PASSPORT booklet with an ivory document peeking behind it, a small plain gold globe relief on the cover and a turquoise page tab. No country name, real seals, official emblem, letters or numbers. Recognizable travel and residence paperwork, not a clipboard.",
+      "mode": "generate",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One closed warm-brown PASSPORT booklet with an ivory document peeking behind it, a small plain gold globe relief on the cover and a turquoise page tab. No country name, real seals, official emblem, letters or numbers. Recognizable travel and residence paperwork, not a clipboard."
+    },
+    {
+      "name": "housing",
+      "label": "السكن",
+      "subject": "",
+      "mode": "reuse",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: "
+    },
+    {
+      "name": "education",
+      "label": "الدراسة والتعليم",
+      "subject": "Isolate the education icon in TOP ROW COLUMN 3: ivory graduation mortarboard with gold tassel, brown headband and a navy blue closed book underneath. Preserve the exact reference design.",
+      "mode": "extract",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Isolate the education icon in TOP ROW COLUMN 3: ivory graduation mortarboard with gold tassel, brown headband and a navy blue closed book underneath. Preserve the exact reference design. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "work",
+      "label": "العمل",
+      "subject": "",
+      "mode": "reuse",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: "
+    },
+    {
+      "name": "health",
+      "label": "الصحة والعلاج",
+      "subject": "Isolate the medical bag in TOP ROW COLUMN 4: cream medical case, brown handle, gold hardware and prominent turquoise medical cross. Preserve its exact reference design; not a business briefcase.",
+      "mode": "extract",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Isolate the medical bag in TOP ROW COLUMN 4: cream medical case, brown handle, gold hardware and prominent turquoise medical cross. Preserve its exact reference design; not a business briefcase. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "transport",
+      "label": "المواصلات والتنقل",
+      "subject": "Isolate the car in MIDDLE ROW COLUMN 2: modern cream passenger car in the same three-quarter view with one navy door panel and natural dark glass. Preserve the exact reference design, no brand or license text.",
+      "mode": "extract",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Isolate the car in MIDDLE ROW COLUMN 2: modern cream passenger car in the same three-quarter view with one navy door panel and natural dark glass. Preserve the exact reference design, no brand or license text. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "daily",
+      "label": "الخدمات اليومية",
+      "subject": "Isolate the shopping bag in MIDDLE ROW COLUMN 4: warm kraft/tan paper bag, cream cord handles and one small navy and gold lotus mark. Preserve the exact reference design.",
+      "mode": "extract",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Isolate the shopping bag in MIDDLE ROW COLUMN 4: warm kraft/tan paper bag, cream cord handles and one small navy and gold lotus mark. Preserve the exact reference design. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "community",
+      "label": "المجتمع والتواصل",
+      "subject": "Isolate the two speech bubbles in BOTTOM ROW COLUMN 3: cream front bubble with three brown dots and one navy bubble behind it. Preserve the exact reference design. This is COMMUNITY conversation, never the AI assistant.",
+      "mode": "extract",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Isolate the two speech bubbles in BOTTOM ROW COLUMN 3: cream front bubble with three brown dots and one navy bubble behind it. Preserve the exact reference design. This is COMMUNITY conversation, never the AI assistant. Remove only its gray rounded backplate and sheet background; preserve the icon artwork as closely as possible."
+    },
+    {
+      "name": "map",
+      "label": "الخريطة والأماكن",
+      "subject": "A folded ivory map with three broad panels, one clean turquoise river, brown minimal road lines and one small gold pin. No street names, text, tiny route grid or scene. Different from the standalone location pin and navigation arrow.",
+      "mode": "generate",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A folded ivory map with three broad panels, one clean turquoise river, brown minimal road lines and one small gold pin. No street names, text, tiny route grid or scene. Different from the standalone location pin and navigation arrow."
+    },
+    {
+      "name": "tourism",
+      "label": "السياحة والتجارب",
+      "subject": "",
+      "mode": "reuse",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: "
+    },
+    {
+      "name": "translation",
+      "label": "الترجمة واللغات",
+      "subject": "Two small upright ivory and navy translation cards with broad warm-brown edges and one clear pair of opposing gold arrows between them. No speech bubbles, alphabet letters, text or globe. Recognizable exchange between languages; distinct from community and robot assistant.",
+      "mode": "generate",
+      "group": "section",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Two small upright ivory and navy translation cards with broad warm-brown edges and one clear pair of opposing gold arrows between them. No speech bubbles, alphabet letters, text or globe. Recognizable exchange between languages; distinct from community and robot assistant."
+    },
+    {
+      "name": "government",
+      "label": "الجهات الحكومية والجوازات",
+      "subject": "A compact civic office building with a broad formal entrance and three clear vertical windows; no seal or lettering.",
+      "tokens": [
+        "🏛️"
+      ],
+      "context": [
+        "مصلحة الجوازات والهجرة"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact civic office building with a broad formal entrance and three clear vertical windows; no seal or lettering."
+    },
+    {
+      "name": "embassy",
+      "label": "السفارات",
+      "subject": "A compact embassy building with one clearly visible plain restrained turquoise flag on a short flagpole; no national insignia.",
+      "tokens": [
+        "🏛️"
+      ],
+      "context": [
+        "سفارات"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact embassy building with one clearly visible plain restrained turquoise flag on a short flagpole; no national insignia."
+    },
+    {
+      "name": "heritage",
+      "label": "الجولات الأثرية",
+      "subject": "A single ancient Egyptian temple gateway with two broad sandstone pylons and a dark central entrance; no inscriptions.",
+      "tokens": [
+        "🏛️"
+      ],
+      "context": [
+        "جولات أثرية"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A single ancient Egyptian temple gateway with two broad sandstone pylons and a dark central entrance; no inscriptions."
+    },
+    {
+      "name": "id-card",
+      "label": "الأحوال المدنية",
+      "subject": "A single identity card with a large generic portrait silhouette and two broad blank recessed lines; no real document design, seals, letters or numbers.",
+      "tokens": [
+        "💍"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A single identity card with a large generic portrait silhouette and two broad blank recessed lines; no real document design, seals, letters or numbers."
+    },
+    {
+      "name": "traffic",
+      "label": "المرور والسيارات",
+      "subject": "A compact modern passenger car, three-quarter front view, with a clear windshield and two visible wheels; no brand or license lettering.",
+      "tokens": [
+        "🚗"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact modern passenger car, three-quarter front view, with a clear windshield and two visible wheels; no brand or license lettering."
+    },
+    {
+      "name": "office",
+      "label": "المكاتب والمؤسسات",
+      "subject": "A compact contemporary office tower with three broad glazed floor bands and one large doorway; no signage.",
+      "tokens": [
+        "🏢"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact contemporary office tower with three broad glazed floor bands and one large doorway; no signage."
+    },
+    {
+      "name": "clock",
+      "label": "المواعيد وساعات العمل",
+      "subject": "One thick round clock with two bold clearly separated hands and four simple hour marks; no numbers.",
+      "tokens": [
+        "⏰",
+        "🕐"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One thick round clock with two bold clearly separated hands and four simple hour marks; no numbers."
+    },
+    {
+      "name": "money",
+      "label": "الرسوم والأسعار والدخل",
+      "subject": "A short stack of three broad coins with one upright plain coin leaning against it; no currency signs or inscriptions.",
+      "tokens": [
+        "💰"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A short stack of three broad coins with one upright plain coin leaning against it; no currency signs or inscriptions."
+    },
+    {
+      "name": "website",
+      "label": "المواقع الرسمية",
+      "subject": "A single browser window with a broad top bar and a large simple globe in its center; no lettering or address text.",
+      "tokens": [
+        "🌐"
+      ],
+      "context": [
+        "مواقع رسمية مهمة"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A single browser window with a broad top bar and a large simple globe in its center; no lettering or address text."
+    },
+    {
+      "name": "law",
+      "label": "القوانين",
+      "subject": "One balanced weighing scale with a short central stem, broad beam and two simple suspended pans.",
+      "tokens": [
+        "⚖️"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One balanced weighing scale with a short central stem, broad beam and two simple suspended pans."
+    },
+    {
+      "name": "camera",
+      "label": "الصور",
+      "subject": "A compact photographic camera with a large circular lens and one short top shutter button; no logo.",
+      "tokens": [
+        "📸"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact photographic camera with a large circular lens and one short top shutter button; no logo."
+    },
+    {
+      "name": "metro",
+      "label": "المترو والمواصلات القريبة",
+      "subject": "The front of a modern metro train with one broad windshield, two simple headlights and a short visible rail base; no text.",
+      "tokens": [
+        "🚇"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: The front of a modern metro train with one broad windshield, two simple headlights and a short visible rail base; no text."
+    },
+    {
+      "name": "shopping",
+      "label": "السوبر ماركت والمتاجر",
+      "subject": "A compact shopping basket with a thick handle and two broad grocery shapes, one bottle and one loaf; no packaging text.",
+      "tokens": [
+        "🛒"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact shopping basket with a thick handle and two broad grocery shapes, one bottle and one loaf; no packaging text."
+    },
+    {
+      "name": "books",
+      "label": "التخصصات والدراسة",
+      "subject": "Two thick closed textbooks stacked at slightly different angles, with broad clean spines and visible page blocks; no titles.",
+      "tokens": [
+        "📚"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Two thick closed textbooks stacked at slightly different angles, with broad clean spines and visible page blocks; no titles."
+    },
+    {
+      "name": "calendar",
+      "label": "التواريخ والتقديم ومدة العقد",
+      "subject": "One compact desktop calendar with two clear top binding rings and a simple four-cell recessed grid; no letters or numbers.",
+      "tokens": [
+        "📅"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact desktop calendar with two clear top binding rings and a simple four-cell recessed grid; no letters or numbers."
+    },
+    {
+      "name": "target",
+      "label": "الاستعداد للاختبارات والمقابلات",
+      "subject": "One broad circular target with three thick concentric rings and one short arrow striking its center.",
+      "tokens": [
+        "🎯"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One broad circular target with three thick concentric rings and one short arrow striking its center."
+    },
+    {
+      "name": "gift",
+      "label": "المزايا",
+      "subject": "One compact gift box with a thick contrasting ribbon and a simple two-loop bow.",
+      "tokens": [
+        "🎁"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact gift box with a thick contrasting ribbon and a simple two-loop bow."
+    },
+    {
+      "name": "ambulance",
+      "label": "الإسعاف",
+      "subject": "A compact ambulance van in three-quarter view with a restrained turquoise medical plus, two visible wheels and a small roof beacon; no lettering.",
+      "tokens": [
+        "🚑"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact ambulance van in three-quarter view with a restrained turquoise medical plus, two visible wheels and a small roof beacon; no lettering."
+    },
+    {
+      "name": "hospital",
+      "label": "المستشفيات والرعاية الصحية",
+      "subject": "A compact modern hospital building with one broad entrance and a large restrained turquoise medical plus on its facade; no lettering.",
+      "tokens": [
+        "🏥"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact modern hospital building with one broad entrance and a large restrained turquoise medical plus on its facade; no lettering."
+    },
+    {
+      "name": "medical",
+      "label": "الرعاية الطبية",
+      "subject": "One simplified stethoscope with a broad curved tube, two clear earpieces and a prominent round chestpiece.",
+      "tokens": [
+        "🩺"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One simplified stethoscope with a broad curved tube, two clear earpieces and a prominent round chestpiece."
+    },
+    {
+      "name": "tooth",
+      "label": "طب الأسنان",
+      "subject": "A single clean molar tooth with a broad crown and two distinct short roots.",
+      "tokens": [
+        "🦷"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A single clean molar tooth with a broad crown and two distinct short roots."
+    },
+    {
+      "name": "laundry",
+      "label": "الغسيل والمغاسل",
+      "subject": "One compact front-loading washing machine with a large round door and two broad control shapes; no letters or numbers.",
+      "tokens": [
+        "🧺"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact front-loading washing machine with a large round door and two broad control shapes; no letters or numbers."
+    },
+    {
+      "name": "cleaning",
+      "label": "التنظيف",
+      "subject": "One household broom with a short thick handle and a broad clearly defined bristle head, placed diagonally.",
+      "tokens": [
+        "🧹"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One household broom with a short thick handle and a broad clearly defined bristle head, placed diagonally."
+    },
+    {
+      "name": "tools",
+      "label": "الصيانة والكهرباء والسباكة",
+      "subject": "One sturdy adjustable wrench crossed with one short screwdriver, both with broad easily recognized silhouettes.",
+      "tokens": [
+        "🔧"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One sturdy adjustable wrench crossed with one short screwdriver, both with broad easily recognized silhouettes."
+    },
+    {
+      "name": "moving",
+      "label": "نقل الأثاث",
+      "subject": "A compact moving truck with one large rectangular cargo box, a short cab and two visible wheels; no lettering.",
+      "tokens": [
+        "🚚"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact moving truck with one large rectangular cargo box, a short cab and two visible wheels; no lettering."
+    },
+    {
+      "name": "cooling",
+      "label": "التكييف",
+      "subject": "One compact wall-mounted air conditioner with a single broad open lower vent and two subtle horizontal louvers; no logo.",
+      "tokens": [
+        "❄️"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact wall-mounted air conditioner with a single broad open lower vent and two subtle horizontal louvers; no logo."
+    },
+    {
+      "name": "food-delivery",
+      "label": "توصيل الطعام",
+      "subject": "One simple takeaway paper bag with a broad handle, accompanied by one clearly recognizable burger; no branding or lettering.",
+      "tokens": [
+        "🍔"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One simple takeaway paper bag with a broad handle, accompanied by one clearly recognizable burger; no branding or lettering."
+    },
+    {
+      "name": "parcel",
+      "label": "الشحن والطرود",
+      "subject": "One closed cardboard shipping parcel in three-quarter view with a single broad sealing tape strip; no labels or text.",
+      "tokens": [
+        "📦"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One closed cardboard shipping parcel in three-quarter view with a single broad sealing tape strip; no labels or text."
+    },
+    {
+      "name": "cinema",
+      "label": "السينما",
+      "subject": "One film clapperboard with an open striped hinged top and a plain broad lower slate; no lettering or numbers.",
+      "tokens": [
+        "🎬"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One film clapperboard with an open striped hinged top and a plain broad lower slate; no lettering or numbers."
+    },
+    {
+      "name": "leisure",
+      "label": "مراكز الترفيه",
+      "subject": "One bowling pin and one compact bowling ball with three broad finger holes.",
+      "tokens": [
+        "🎳"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One bowling pin and one compact bowling ball with three broad finger holes."
+    },
+    {
+      "name": "fitness",
+      "label": "الجيم واللياقة",
+      "subject": "One short dumbbell with a thick central grip and two clearly defined weight plates on each end.",
+      "tokens": [
+        "🏋️"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One short dumbbell with a thick central grip and two clearly defined weight plates on each end."
+    },
+    {
+      "name": "theatre",
+      "label": "المسرح",
+      "subject": "Two simple theatrical masks, one smiling and one serious, with broad carved eye and mouth openings.",
+      "tokens": [
+        "🎭"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: Two simple theatrical masks, one smiling and one serious, with broad carved eye and mouth openings."
+    },
+    {
+      "name": "university",
+      "label": "الجامعات والمعاهد",
+      "subject": "One graduation cap with a broad square mortarboard, compact headband and a single short tassel.",
+      "tokens": [
+        "🎓"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One graduation cap with a broad square mortarboard, compact headband and a single short tassel."
+    },
+    {
+      "name": "bank",
+      "label": "البنوك",
+      "subject": "One compact bank facade with three broad columns and a triangular pediment, with one plain coin leaning at its base; no lettering.",
+      "tokens": [
+        "🏦"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact bank facade with three broad columns and a triangular pediment, with one plain coin leaning at its base; no lettering."
+    },
+    {
+      "name": "restaurant",
+      "label": "المطاعم",
+      "subject": "One broad dinner plate with a single prominent fork placed diagonally across its edge.",
+      "tokens": [
+        "🍽️"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One broad dinner plate with a single prominent fork placed diagonally across its edge."
+    },
+    {
+      "name": "coffee",
+      "label": "المقاهي",
+      "subject": "One compact coffee cup with a thick handle, filled with dark coffee and one broad curved steam stroke above it.",
+      "tokens": [
+        "☕"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact coffee cup with a thick handle, filled with dark coffee and one broad curved steam stroke above it."
+    },
+    {
+      "name": "hotel",
+      "label": "الفنادق",
+      "subject": "One compact hotel building with two broad window bands and a large simple bed relief above its entrance; no lettering.",
+      "tokens": [
+        "🏨"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact hotel building with two broad window bands and a large simple bed relief above its entrance; no lettering."
+    },
+    {
+      "name": "fuel",
+      "label": "محطات الوقود",
+      "subject": "One compact fuel pump with a broad blank display, short hose and clearly visible nozzle; no lettering or digits.",
+      "tokens": [
+        "⛽"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact fuel pump with a broad blank display, short hose and clearly visible nozzle; no lettering or digits."
+    },
+    {
+      "name": "police",
+      "label": "الشرطة وشرطة السياحة",
+      "subject": "One recognizable police peaked cap with a broad dark visor and a simple blank shield relief; no official seal or insignia.",
+      "tokens": [
+        "🚓",
+        "👮"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One recognizable police peaked cap with a broad dark visor and a simple blank shield relief; no official seal or insignia."
+    },
+    {
+      "name": "diving",
+      "label": "الغوص",
+      "subject": "One broad diving mask with two clear lenses and one short snorkel beside it.",
+      "tokens": [
+        "🏊"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One broad diving mask with two clear lenses and one short snorkel beside it."
+    },
+    {
+      "name": "desert",
+      "label": "الرحلات الصحراوية",
+      "subject": "One single-humped dromedary camel with a clear side silhouette, short sturdy legs and a gently raised head; no scenery.",
+      "tokens": [
+        "🐪"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One single-humped dromedary camel with a clear side silhouette, short sturdy legs and a gently raised head; no scenery."
+    },
+    {
+      "name": "sailboat",
+      "label": "الرحلات النيلية",
+      "subject": "One compact Egyptian felucca boat with a broad wooden hull and a single large triangular lateen sail; no water scene.",
+      "tokens": [
+        "⛵"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact Egyptian felucca boat with a broad wooden hull and a single large triangular lateen sail; no water scene."
+    },
+    {
+      "name": "balloon",
+      "label": "رحلات البالون",
+      "subject": "One hot-air balloon with a broad vertically segmented envelope and one short clearly visible passenger basket.",
+      "tokens": [
+        "🎈"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One hot-air balloon with a broad vertically segmented envelope and one short clearly visible passenger basket."
+    },
+    {
+      "name": "firetruck",
+      "label": "الإطفاء",
+      "subject": "One compact fire engine with a short cab, two visible wheels, a clearly visible roof ladder and a small beacon; no lettering.",
+      "tokens": [
+        "🚒"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One compact fire engine with a short cab, two visible wheels, a clearly visible roof ladder and a small beacon; no lettering."
+    },
+    {
+      "name": "saved-folder",
+      "label": "العناصر المحفوظة",
+      "subject": "One thick file folder with a broad tab and a prominent inset bookmark-shaped relief on its front; no text.",
+      "tokens": [
+        "💾"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One thick file folder with a broad tab and a prominent inset bookmark-shaped relief on its front; no text."
+    },
+    {
+      "name": "stats",
+      "label": "الإحصائيات",
+      "subject": "One simple three-column bar chart with three broad upright bars ascending in height on a short common base; no text or numbers.",
+      "tokens": [
+        "📊"
+      ],
+      "mode": "generate",
+      "group": "content",
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One simple three-column bar chart with three broad upright bars ascending in height on a short common base; no text or numbers."
+    },
+    {
+      "name": "notary",
+      "label": "الشهر العقاري والتوثيق",
+      "subject": "A compact warm-brown legal registry BOOK with an ivory page block and one clear small gold notary STAMP standing beside it. One restrained turquoise binding strip. A recognizable notarial registry and document authentication symbol, not a clipboard, courthouse, judge gavel, passport or office scene. No real seal, emblem, signatures, text or numbers.",
+      "mode": "generate",
+      "group": "content",
+      "tokens": [],
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A compact warm-brown legal registry BOOK with an ivory page block and one clear small gold notary STAMP standing beside it. One restrained turquoise binding strip. A recognizable notarial registry and document authentication symbol, not a clipboard, courthouse, judge gavel, passport or office scene. No real seal, emblem, signatures, text or numbers."
+    },
+    {
+      "name": "work-permit",
+      "label": "تصاريح العمل",
+      "subject": "One upright ivory WORK PERMIT document with a small unmistakable warm-brown BRIEFCASE relief at the top and a simple brushed-gold round validation seal with a turquoise center at the bottom. Two broad blank recessed rules only. Clear silhouette and restrained detail. No country emblem, real document layout, letters, numbers, signatures or actual official seal.",
+      "mode": "generate",
+      "group": "content",
+      "tokens": [],
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: One upright ivory WORK PERMIT document with a small unmistakable warm-brown BRIEFCASE relief at the top and a simple brushed-gold round validation seal with a turquoise center at the bottom. Two broad blank recessed rules only. Clear silhouette and restrained detail. No country emblem, real document layout, letters, numbers, signatures or actual official seal."
+    },
+    {
+      "name": "night-clinic",
+      "label": "الرعاية والطوارئ الليلية",
+      "subject": "A simple small ivory MEDICAL CROSS with warm-brown side depth beside one broad gold CRESCENT MOON, a small turquoise inset on the cross. A clear nighttime medical-care symbol. Only these two essential forms, no stars, clock, hospital scene, words or cartoony face.",
+      "mode": "generate",
+      "group": "content",
+      "tokens": [],
+      "prompt": "Use case: stylized-concept. Asset: ONE custom Ahlan UI icon, square raster with genuine alpha transparency. Input image 1 is the AUTHORITATIVE approved visual reference, not a loose inspiration. Keep exactly the same visual family: premium semi-realistic 3D, about 50% iconic illustration and 50% natural material rendering, precise balanced proportions, crisp edges with restrained bevels, gentle top-left studio light, shallow three-quarter camera, soft alpha contact shadow. Buttery ivory/cream and warm brown are the dominant materials; navy blue, turquoise, brushed gold and muted sage only in restrained meaningful accents as in the board. Same creamy leather/ceramic, natural brown edging and restrained gold hardware when appropriate; simplify for recognition. Not photorealistic scenes, not a photo, not flat vector, not puffy clay, no inflated geometry, no childish cartoon, no crowded pharaonic decoration. An Egyptian detail only when requested, very subtle. Object fully visible, centered in a square canvas with about 10% transparent margin, no cropping. Real transparent background; NO gray rounded tile, white backdrop, checkerboard, floor, pedestal, border, text, letters, digits, brands or watermark. UI tile is a separate CSS component. Requested single subject: A simple small ivory MEDICAL CROSS with warm-brown side depth beside one broad gold CRESCENT MOON, a small turquoise inset on the cross. A clear nighttime medical-care symbol. Only these two essential forms, no stars, clock, hospital scene, words or cartoony face."
+    }
+  ]
+}

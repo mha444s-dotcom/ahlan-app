@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "description": "Original pre-prototype protected asset hashes. Paths are portable; expected hashes come from the preserved historical checkpoint, not the current application.",
+  "sourceManifestSHA256": "5cc62a1f08f5d7ab573c836db2aa874519132f7a2c75b622031878cf8c454f91",
+  "files": [
+    {
+      "path": "dist/assets/categories/assistant.png",
+      "sha256": "0f3c8ff4581e3ff1fc602298c9ac05fcfae623442b95f5edacfd4295a1366ffe"
+    },
+    {
+      "path": "dist/assets/categories/community.png",
+      "sha256": "515038b74ac592a7212387dd176b380e0124d213878ce34883800db247344cc7"
+    },
+    {
+      "path": "dist/assets/categories/daily.png",
+      "sha256": "ccaa5a80131f5900c990ce3f63a0a536566128762d7f423e05c2d4743d5f5b05"
+    },
+    {
+      "path": "dist/assets/categories/education.png",
+      "sha256": "97312dd4e0139c0ecd5adaaacc8f90ad7330bae4580e53896310920dde7d21ca"
+    },
+    {
+      "path": "dist/assets/categories/emergency.png",
+      "sha256": "42d1e8234eb1ad038c7923f725c50eaeda1e0f252b367294099352bffb973b8f"
+    },
+    {
+      "path": "dist/assets/categories/health.png",
+      "sha256": "3e84633e35c672148c7cc2e00bae7ab58ea1e55b0b5fa9dbbceb9c37912f2db6"
+    },
+    {
+      "path": "dist/assets/categories/housing.png",
+      "sha256": "142233dea2e11d36aefe1dee4025f2cb69a7264f251c5751985fcdab68de0682"
+    },
+    {
+      "path": "dist/assets/categories/map.png",
+      "sha256": "12b0a6ee1e8015bf55425ef5ef618ce4f4df7f87dfa7f8e97c9deba676c6819d"
+    },
+    {
+      "path": "dist/assets/categories/procedures.png",
+      "sha256": "6bc848e0805a106cc10676725fb6a61709884c362f60c5f7d020a423a245b6a7"
+    },
+    {
+      "path": "dist/assets/categories/profile.png",
+      "sha256": "aec1a1177be874ff8c2744c678dfbef85a86279d512b010708117ef67cb83160"
+    },
+    {
+      "path": "dist/assets/categories/tourism.png",
+      "sha256": "691f9678d6bfe1c034838db68533d13eab9e712778d731af5eb12e88fe5365a3"
+    },
+    {
+      "path": "dist/assets/categories/translation.png",
+      "sha256": "f0f10e32ef21dfb77fcad185229da854ae5dff44f6dbb3458bfbcbc412d8843b"
+    },
+    {
+      "path": "dist/assets/categories/transport.png",
+      "sha256": "6d3902eaf92783e633d5356abfb5d41d6850c172d5f07024c746dc5baa76aebe"
+    },
+    {
+      "path": "dist/assets/categories/work.png",
+      "sha256": "c9194c3825cd68f46144ea613052ef0cffa9db63be404816cfa42517ef8fc1e9"
+    },
+    {
+      "path": "dist/assets/optimized/categories/assistant-480.jpg",
+      "sha256": "2ba93a2f5fc0031f48523249579ee201c2aa9e317c4bef54999971e051a44869"
+    },
+    {
+      "path": "dist/assets/optimized/categories/assistant-960.jpg",
+      "sha256": "4452a4e964db94776a21a1b2df09202a2b98ae38f85592b8b8398424d5e35da4"
+    },
+    {
+      "path": "dist/assets/optimized/categories/community-480.jpg",
+      "sha256": "70cef364dddb22e1c56a9703c482606354c5a78967ed7b48bf7221418eabe055"
+    },
+    {
+      "path": "dist/assets/optimized/categories/community-960.jpg",
+      "sha256": "5a7624be540cb4fed45ad75cda161d2ac354fcfcfaeb187b41f0a8a075ca1673"
+    },
+    {
+      "path": "dist/assets/optimized/categories/daily-480.jpg",
+      "sha256": "a48be436fe3265c8e32a82d59e2f718742855dca0371fadce35467e8bd238714"
+    },
+    {
+      "path": "dist/assets/optimized/categories/daily-960.jpg",
+      "sha256": "7603729d55a4bf8e9e31f441636fe562f99e4f2029bc5b3fcb5db47706c901bd"
+    },
+    {
+      "path": "dist/assets/optimized/categories/education-480.jpg",
+      "sha256": "18b6da703ee76fdc0c2f92ece83bd50b822244f434faab7c59cb6082073fc4fd"
+    },
+    {
+      "path": "dist/assets/optimized/categories/education-960.jpg",
+      "sha256": "5b6188540a747e5aa143d29b3eb087b90bdd46a8ec760b1714ef30433e02a27b"
+    },
+    {
+      "path": "dist/assets/optimized/categories/emergency-480.jpg",
+      "sha256": "a3225d1cf78dac7aebe12fa0db90a2dd68695b689f339c0468dba04bded540ee"
+    },
+    {
+      "path": "dist/assets/optimized/categories/emergency-960.jpg",
+      "sha256": "256a9367715abf774e489cf5b9fd3fcc3b2b8d1f8a09b6340c5c854458138ff3"
+    },
+    {
+      "path": "dist/assets/optimized/categories/health-480.jpg",
+      "sha256": "47f841fcd980db448b2d7e599e447166660418e9ae165bd553613f111e3c6312"
+    },
+    {
+      "path": "dist/assets/optimized/categories/health-960.jpg",
+      "sha256": "39a58bf5e0f11cb5e41f6464aafb7d5e373840f92fdb0a05535f263db435ecba"
+    },
+    {
+      "path": "dist/assets/optimized/categories/housing-480.jpg",
+      "sha256": "3e686cae6119658e2687c56512c1483fbde5c62f0e00f3d8736f6df90b811b40"
+    },
+    {
+      "path": "dist/assets/optimized/categories/housing-960.jpg",
+      "sha256": "d6682c1fac2cf64107dbbf81f4883a561e7b0ab95c65f6eaf207810cd5b84618"
+    },
+    {
+      "path": "dist/assets/optimized/categories/map-480.jpg",
+      "sha256": "7aa5ba80055976e0c749f4c78e8d6f8bbf119b7423a3ccdfd1c201cd11939b2a"
+    },
+    {
+      "path": "dist/assets/optimized/categories/map-960.jpg",
+      "sha256": "017a670a3c5969e53a7477431402f44cfb99de0c0fdc0e9c41b4a8b112d44a84"
+    },
+    {
+      "path": "dist/assets/optimized/categories/procedures-480.jpg",
+      "sha256": "f9b67ce16c287a0b5048218ee4dabae2db79a1223e4478e883d6b21ab92969f9"
+    },
+    {
+      "path": "dist/assets/optimized/categories/procedures-960.jpg",
+      "sha256": "db81cba746b9612eccef509195398fec1e424ababe3f308c0001e648b7ba5868"
+    },
+    {
+      "path": "dist/assets/optimized/categories/profile-480.jpg",
+      "sha256": "7adb36643c6843bb6679bcb554c2ffa0876a337827ea7d4af805e94dddfd812b"
+    },
+    {
+      "path": "dist/assets/optimized/categories/profile-960.jpg",
+      "sha256": "df0895ce82ba6a7d36c60e7009cdc2c21a7f901f9818e67baddfe7b76fb2a8ba"
+    },
+    {
+      "path": "dist/assets/optimized/categories/tourism-480.jpg",
+      "sha256": "46be560aff959a3fcf90e61c9109617332a005a8fea1c85281de09feacc5f26a"
+    },
+    {
+      "path": "dist/assets/optimized/categories/tourism-960.jpg",
+      "sha256": "b6ec081f9b07088fa3092a93afb54fc8164b5f10c5eab173598fe84cad44a320"
+    },
+    {
+      "path": "dist/assets/optimized/categories/translation-480.jpg",
+      "sha256": "66e54216ffb06609f6c0e1f1f8d3a520f4acb0df6b854d3497944e991881e7d3"
+    },
+    {
+      "path": "dist/assets/optimized/categories/translation-960.jpg",
+      "sha256": "0e265194b0c0e15053d4e18648291b16330903a9ebde62d7211eea3067a24587"
+    },
+    {
+      "path": "dist/assets/optimized/categories/transport-480.jpg",
+      "sha256": "026275dfd3408d016a291e166cf933a69ab7c37cb36c5702e4da4f0a21e33e06"
+    },
+    {
+      "path": "dist/assets/optimized/categories/transport-960.jpg",
+      "sha256": "689dc096b5c9a3db1bfe9cfba2f5fa38be928d0d4b91e330f22acd93d3ad3246"
+    },
+    {
+      "path": "dist/assets/optimized/categories/work-480.jpg",
+      "sha256": "bac1ef0f98271f50dd3aeac33e3bbcad4a4f0ebd8af6ac7e226b4305502d4e96"
+    },
+    {
+      "path": "dist/assets/optimized/categories/work-960.jpg",
+      "sha256": "b43108394eea45797aefd5a2c7321d0af4775d0965328ccb8b5d6ad4a2ed5cb6"
+    },
+    {
+      "path": "dist/content-data.js",
+      "sha256": "48ca49fb15986bbe557459fb32d7c9de4710dc71f2fe704df96e7522c6bd3575"
+    },
+    {
+      "path": "dist/journey-data.js",
+      "sha256": "9bcf4f3a8bf67f3a670ff33b7679437c3729a444531391bd3751d286b504761c"
+    },
+    {
+      "path": "dist/brand-icons.js",
+      "sha256": "d7151227b37d30f96f934bac36b2a7af80584c52ae0985988525643f9740542a"
+    },
+    {
+      "path": "dist/brand-icons.css",
+      "sha256": "1759c2cd3d493bd132904f7fddab9c3551524ff75cc1d973c075db0c85961960"
+    }
+  ],
+  "realExperiencesPrefix": {
+    "delimiter": "function realImage",
+    "sha256": "19f2ec49d0fba02ff4e43d6f1c7e7d7c67dceea0bc5ca3de45dfbfc94068c125"
+  }
+}

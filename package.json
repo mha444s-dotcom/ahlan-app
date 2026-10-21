@@ -1,0 +1,23 @@
+{
+  "name": "ahlan-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ahlan: an Arabic-first Egypt guide with native Discover and an installable PWA.",
+  "scripts": {
+    "build": "node maintenance/production/Build-Release.cjs",
+    "test:production": "node --test tests/production-build.cjs tests/production-package.cjs",
+    "preview": "node maintenance/production/Preview-Release.cjs",
+    "test": "node --test tests/production-build.cjs tests/production-package.cjs tests/production-images.cjs tests/discover-source.cjs tests/test-cache-cleanup.cjs",
+    "test:ci": "node --test tests/regression.cjs tests/ui-layout.cjs tests/header-scroll.cjs tests/native-runtime.cjs tests/discover-resources.cjs tests/discover-quality.cjs tests/discover-dead-styles.cjs tests/pwa.cjs tests/discover-source.cjs tests/production-build.cjs tests/production-images.cjs tests/production-package.cjs tests/test-cache-cleanup.cjs tests/github-workflow.cjs tests/github-publish.cjs",
+    "check:publish": "node maintenance/github/Check-Publish.cjs",
+    "build:update": "node maintenance/github/Prepare-Release.cjs",
+    "ship": "node maintenance/github/Publish.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "type": "module"
+}

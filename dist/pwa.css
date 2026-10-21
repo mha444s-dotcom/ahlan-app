@@ -1,0 +1,11 @@
+/* Hardware insets only: zero on ordinary rectangular screens. Existing header
+   measurements and navigation reservations account for the resulting height. */
+body > .site-header {
+  padding-block-start: env(safe-area-inset-top, 0px);
+  padding-inline-start: env(safe-area-inset-right, 0px);
+  padding-inline-end: env(safe-area-inset-left, 0px);
+}
+main#main {
+  padding-inline-start: max(var(--gutter, 16px), env(safe-area-inset-right, 0px));
+  padding-inline-end: max(var(--gutter, 16px), env(safe-area-inset-left, 0px));
+}

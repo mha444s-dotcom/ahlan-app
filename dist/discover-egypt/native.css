@@ -1,0 +1,27 @@
+/* Document-boundary adjustments only. Original visual rules remain page.css. */
+:host { all: initial; display: block; min-inline-size: 0; direction: rtl; text-align: start; isolation: isolate; }
+slot[name="anchor"] { position: absolute; inset-block-start: 0; }
+[data-discover-document] { min-inline-size: 0; }
+.story-wayfinder { top: var(--discover-visible-top, 0px); }
+#heritage-full {
+  top: var(--discover-visible-top, 0px) !important;
+  bottom: var(--discover-bottom, 0px) !important;
+  left: var(--discover-left, 0px) !important;
+  right: var(--discover-right, 0px) !important;
+  width: var(--discover-width, 100%) !important;
+  height: var(--discover-viewport-height, 100dvh) !important;
+  min-height: 0 !important;
+}
+dialog {
+  inset: var(--discover-visible-top, 0px) var(--discover-right, 0px) var(--discover-bottom, 0px) var(--discover-left, 0px);
+  margin: auto;
+  max-width: min(580px, calc(var(--discover-width, 100vw) - 28px));
+  max-height: min(calc(var(--discover-viewport-height, 100dvh) * .85), 770px);
+}
+dialog::backdrop { clip-path: inset(var(--discover-visible-top, 0px) var(--discover-right, 0px) var(--discover-bottom, 0px) var(--discover-left, 0px)); }
+#story-history, #story-places, #story-culture, #story-experiences, #timeline, #pharaohs, #mediterranean, #islamic, #modern, #top {
+  scroll-margin-top: calc(132px + var(--discover-visible-top, 0px));
+}
+.ahlan-shared-icon { display: inline-block; inline-size: 24px; block-size: 24px; width: 24px; height: 24px; object-fit: contain; vertical-align: middle; pointer-events: none; }
+.fav > .ahlan-shared-icon { transform: none !important; }
+#guide-favorites > .ahlan-shared-icon { margin-inline-end: 6px; }

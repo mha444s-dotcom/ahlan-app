@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Ahlan: Test, build, commit and deploy",
+      "type": "process",
+      "command": "node",
+      "args": ["maintenance/github/Publish.cjs", "--message", "${input:commitMessage}"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": [],
+      "presentation": {"reveal": "always", "panel": "dedicated"}
+    },
+    {
+      "label": "Ahlan: Validate without publishing",
+      "type": "process",
+      "command": "node",
+      "args": ["--run", "test:ci"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [{"id": "commitMessage", "type": "promptString", "description": "Describe the completed Ahlan update"}]
+}

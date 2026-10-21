@@ -1,0 +1,331 @@
+/* Explore quality adjustments. Loaded inside its shadow root after approved art direction. */
+:host {
+  --discover-copy-size: 15px;
+  --discover-caption-size: 13px;
+  --discover-control-size: 44px;
+  --discover-focus: #94602e;
+}
+[data-discover-body] { font-size: var(--discover-copy-size); line-height: 1.85; }
+button, a, input, summary { -webkit-tap-highlight-color: #b9854340; }
+button, input, select, textarea { min-inline-size: 0; }
+button, a.primary-btn, a.ghost-btn, .era-deep-link, .chapter-transition a,
+.journey-last-action, .archive-credits summary, .sources-licenses summary {
+  min-block-size: var(--discover-control-size);
+  min-inline-size: var(--discover-control-size);
+}
+input[type="search"] { font-size: 16px !important; min-block-size: 44px; }
+button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible,
+[role="button"]:focus-visible, [tabindex="0"]:focus-visible {
+  outline: 3px solid var(--discover-focus);
+  outline-offset: 3px;
+}
+.hero-stage, #timeline, .epoch.pharaoh, .medina, .culture-world, .moments,
+.story-wayfinder, .travel-guide, dialog { --discover-focus: #f5d5a4; }
+button:disabled { cursor: default; }
+.wrap, .section-header > div, .journey-portal-title > div, .hero-top > div,
+.time-story, .city-era-info, .dialog-top > :first-child { min-inline-size: 0; }
+.section-header { flex-wrap: wrap; align-items: flex-start; row-gap: 12px; }
+.section-header > div { flex: 1 1 240px; }
+.section-header > .label { flex: 0 0 auto; }
+.section-header > button { align-self: center; }
+.hero-top p, .hero-copy p, .journey-portal-title p, .section-header p,
+.story-chapter-copy p, .pharaoh-copy p, .history-head p, .medina-copy p,
+.age-crossing-copy p, .metropolis .time-story p, .culture-world-heading p,
+.culture-street-copy p, .feature-content p, .journey-last p, .travel-guide p,
+.dialog-body p, .chapter-transition p, .vignette-head p {
+  font-size: var(--discover-copy-size);
+  line-height: 1.9;
+}
+.hero-top p, .journey-portal-title p { color: #68594d; }
+.portal-eyebrow { color: #865630; font-size: 13px; line-height: 1.7; }
+.portal-foot > span { color: #685c50; font-size: 13px; line-height: 1.8; }
+.kicker { font-size: 13px; color: #85532e; }
+.story-chapter-copy p { color: #655b52; }
+.story-chapter-kicker { color: #48636a; font-size: 13px; }
+.story-chapter-index > span { font-size: 10px; }
+.story-chapter-index strong { color: #97613a; }
+.story-chapter-tag { color: #726151; font-size: 13px; }
+.choice-sub, .choice-enter, .journey-choice .choice-ordinal,
+.hero-copy .hero-tag, .hero-label, .pharaoh-copy .temple-chapter,
+.pharaoh-copy .epoch-flag, .temple-portrait small, .medina-photo span,
+.culture-light-label, .culture-signatures span, .culture-lane-title small,
+.culture-edition, .vignette-tags span, .time-date, .time-overline,
+.time-scene-label, .time-period, .time-live, .time-footer,
+.metro-edition, .metro-edition span, .city-postscript-rule > span:last-child,
+.age-crossing-index, .age-crossing-gate, .age-crossing-dots {
+  font-size: var(--discover-caption-size);
+  line-height: 1.65;
+}
+.choice-text p { font-size: 14px; line-height: 1.75; }
+.choice-text h3 { line-height: 1.45; }
+.portal-all, .wayfinder-next, .wayfinder-links a, .ghost-btn, .text-link,
+.time-choice, .time-detail, .chronicle-nav button, .era-deep-link,
+.chapter-transition a, .journey-last-action, .close-dialog {
+  font-size: 14px;
+  line-height: 1.55;
+}
+.portal-all { white-space: normal; }
+.story-wayfinder .wayfinder-links a {
+  min-block-size: 44px;
+  min-inline-size: 44px;
+  justify-content: center;
+}
+.wayfinder-links { min-inline-size: 0; overscroll-behavior-inline: contain; }
+.wayfinder-inner { min-block-size: 60px; }
+.wayfinder-links a span { font-size: 12px; }
+.wayfinder-next { min-block-size: 44px; }
+.searchbar { min-block-size: 56px; height: auto; }
+.searchbar input { padding-block: 10px; }
+.searchbar input::placeholder { color: #746457; opacity: 1; }
+.search-action { font-size: 13px; color: #795331; }
+.rail, .timeline-rail, .heritage-categories, .heritage-filter {
+  overscroll-behavior-inline: contain;
+  scroll-padding-inline: 4px;
+}
+.rail { padding-block-start: 5px; padding-block-end: 16px; }
+.fav { inline-size: 44px; block-size: 44px; width: 44px; height: 44px; }
+.rail-card p, .rail-card .small-accent, .rail-photo .float-info {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.rail-card h3 { line-height: 1.6; }
+.rail-photo .float-info { color: #fff4e5; }
+.editor-picks .rail-card p { color: #675749; }
+.postcards .rail-card p { color: #3e5a60; }
+.city-postscript-rule > span:last-child { color: #4b6573; }
+.chapter-transition > div > span { color: #6c4c34; font-size: 13px; }
+.culture-story-festivals .culture-story-copy small { color: #ffebcb; }
+.moments .feature-content h3 { color: #fff1d8; }
+.card .ctitle, .city-story-caption strong, .culture-story-copy strong {
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+.card .csub, .card .top-tag { font-size: 13px; line-height: 1.6; }
+.history-cards .ctitle { line-height: 1.6; }
+.dynasty b { font-size: 16px; line-height: 1.65; }
+.dynasty small { font-size: 13px; line-height: 1.6; }
+.time-switch { flex-wrap: wrap; }
+.time-choice { white-space: normal; }
+.time-choice small { font-size: 12px; }
+.time-gateway-top, .metro-edition, .city-postscript-rule { flex-wrap: wrap; }
+.city-story-caption > span, .culture-story-copy > span, .city-era-info > span {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.city-story-caption small, .culture-story-copy small, .city-era-info small,
+.city-story-index { font-size: 13px; line-height: 1.6; }
+.city-era-info strong { line-height: 1.65; }
+.culture-sign small { font-size: 12px; }
+.journey-last .portal-eyebrow { color: #e4c69c; }
+.travel-guide { flex-wrap: wrap; }
+.guide-actions { min-inline-size: 0; }
+.guide-actions > a { display: inline-flex; align-items: center; justify-content: center; }
+.results-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr)); }
+.result b { font-size: 16px; line-height: 1.7; }
+.result span, .search-empty, .emptyfav { font-size: 14px; line-height: 1.85; }
+.result { overflow-wrap: break-word; }
+
+/* The eleven historical objects and their original artwork remain unchanged. */
+#timeline .chronicle-kicker, #timeline .chronicle-intro-copy small,
+#timeline .era-artifact-name, #timeline .era-tile-date, #timeline .era-number,
+#timeline .era-latin, #timeline .era-footnote, #timeline #era-object-label {
+  font-size: 13px !important;
+  line-height: 1.7;
+}
+#timeline .chronicle-intro-copy small { max-inline-size: none; }
+#timeline .era-pill .era-tile-copy strong { font-size: 15px !important; line-height: 1.7; }
+#timeline .era-copy p { font-size: 15px; line-height: 1.95; }
+#timeline .era-type, #timeline .era-highlights span { font-size: 13px; line-height: 1.7; }
+#timeline .era-deep-link { display: inline-flex; align-items: center; padding-block: 8px; }
+#timeline .era-artifact-name { min-block-size: 23px; }
+#timeline .era-artifact-name { white-space: normal !important; text-overflow: clip !important; overflow: visible !important; min-block-size: 44px; }
+#timeline .chronicle-counter { font-size: 14px; }
+
+/* Keep the warm carved-wood gallery; repair readable type and short controls. */
+#heritage-gallery .heritage-eyebrow { font-size: 13px; color: #f2d5a5; }
+#heritage-gallery .heritage-gallery-heading p { font-size: 15px !important; line-height: 1.9; color: #f3dfbf !important; }
+#heritage-gallery .heritage-category { min-inline-size: 0; }
+#heritage-gallery .heritage-category-name { font-size: 15px !important; line-height: 1.6 !important; color: #fff1dc !important; }
+#heritage-gallery .heritage-category-count { font-size: 13px !important; line-height: 1.6; color: #f1d7ac !important; }
+#heritage-gallery .heritage-open-all {
+  min-block-size: 44px;
+  font-size: 15px !important;
+  line-height: 1.65;
+  white-space: normal;
+  color: #24180e !important;
+}
+#heritage-gallery .tomb-legend strong { line-height: 1.5 !important; }
+#heritage-gallery .tomb-legend small { font-size: 13px !important; line-height: 1.7; color: #efdab9 !important; }
+#heritage-gallery .tomb-models .tomb-models-title {
+  flex-wrap: wrap !important;
+  white-space: normal;
+  gap: 4px 12px !important;
+  font-size: 15px !important;
+  line-height: 1.6;
+}
+#heritage-gallery .tomb-models .tomb-models-title > span {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+#heritage-gallery .tomb-models .tomb-models-title small {
+  font-size: 13px !important;
+  max-inline-size: 100% !important;
+  white-space: normal;
+  color: #f0d9b2;
+}
+#heritage-gallery .tomb-models #heritage-preview .heritage-preview-label strong {
+  font-size: 15px;
+  line-height: 1.5;
+}
+#heritage-gallery .tomb-models #heritage-preview .heritage-preview-label small { font-size: 13px; line-height: 1.5; }
+#heritage-gallery .tomb-models #heritage-preview .heritage-preview-card:after {
+  background: linear-gradient(0deg, #171f20fa, #171f20bb 45%, transparent 86%);
+}
+
+/* The independent gallery keeps its ivory canvas and original photo cards. */
+#heritage-full { overscroll-behavior: contain; scroll-padding-block-start: 92px; }
+#heritage-full .heritage-full-heading {
+  padding-inline-start: max(16px, env(safe-area-inset-right));
+  padding-inline-end: max(16px, env(safe-area-inset-left));
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+#heritage-full .heritage-full-heading h4 { color: #482c32; line-height: 1.5; }
+#heritage-full .heritage-close { min-block-size: 44px; font-size: 14px; line-height: 1.5; }
+#heritage-full .heritage-screen-inner {
+  padding-inline-start: max(14px, env(safe-area-inset-right));
+  padding-inline-end: max(14px, env(safe-area-inset-left));
+  padding-block-end: max(32px, env(safe-area-inset-bottom));
+}
+#heritage-full .heritage-filter { padding-block: 4px 12px; }
+#heritage-full .heritage-filter button { min-block-size: 44px; font-size: 14px; line-height: 1.6; }
+#heritage-full .heritage-filter button small { font-size: 13px; opacity: 1; }
+#heritage-full .heritage-search-wrap { min-block-size: 52px; height: auto; }
+#heritage-full .heritage-search-wrap input { padding-block: 8px; }
+#heritage-full .heritage-search-wrap input::placeholder { color: #705c51; opacity: 1; }
+#heritage-full .heritage-gallery-meta, #heritage-full .heritage-footer { font-size: 14px; line-height: 1.8; color: #6d5849; }
+#heritage-full .heritage-gallery-meta { flex-wrap: wrap; }
+#heritage-full .heritage-piece { height: 285px; }
+#heritage-full .heritage-piece-number { font-size: 13px; line-height: 1.5; }
+#heritage-full .heritage-piece-location { font-size: 13px; line-height: 1.7; }
+#heritage-full .heritage-piece-title { font-size: 17px; line-height: 1.6; }
+#heritage-full .heritage-piece-description { font-size: 14px; line-height: 1.8; }
+#heritage-full .heritage-piece:after { background: linear-gradient(0deg, #291b22fc, #291b22c9 45%, transparent 92%); }
+#heritage-full .heritage-empty { font-size: 15px; line-height: 1.9; }
+
+dialog { overscroll-behavior: contain; scrollbar-gutter: stable; }
+.dialog-top { flex-wrap: wrap; align-items: flex-start; }
+.dialog-top > .close-dialog { flex: 0 0 auto; }
+.dialog-body { padding: clamp(18px, 4vw, 26px); }
+.dialog-body h2 { line-height: 1.6; overflow-wrap: break-word; }
+.dialog-hints span { font-size: 13px; line-height: 1.7; }
+.dialog-note { font-size: 13px !important; line-height: 1.8; }
+.archive-credits, .sources-licenses { font-size: 14px !important; line-height: 1.9; }
+.archive-credits summary, .sources-licenses summary { display: flex; align-items: center; }
+.archive-credits a, .sources-licenses a { display: inline-flex; align-items: center; min-block-size: 44px; }
+
+@media (max-width: 760px) {
+  .hero-top h1 { font-size: clamp(29px, 7.8vw, 35px); line-height: 1.5; }
+  .hero-copy h2 { font-size: clamp(30px, 8vw, 39px); letter-spacing: -.6px; }
+  .hero-copy p { font-size: 15px; }
+  .journey-portal-title h2 { font-size: clamp(25px, 7vw, 31px); }
+  .journey-choices { grid-template-rows: minmax(240px, auto) minmax(230px, auto) minmax(215px, auto); }
+  .choice-text p { font-size: 14px; }
+  .choice-sub, .choice-enter, .journey-choice .choice-ordinal { font-size: 13px; }
+  .choice-history .choice-text h3 { font-size: 26px; }
+  .choice-text h3 { font-size: 20px; }
+  .wayfinder-inner { gap: 6px; padding-inline: 10px; }
+  .story-wayfinder .wayfinder-links a { font-size: 13px; padding: 8px 10px; flex: none; }
+  .wayfinder-next { font-size: 13px; max-inline-size: 112px; padding: 8px 10px; flex: 0 0 auto; }
+  .story-chapter-head { min-block-size: 130px; }
+  .story-chapter-copy h2 { line-height: 1.5; font-size: clamp(24px, 6vw, 30px); }
+  .story-chapter-copy p, .story-chapter-kicker { font-size: 15px; }
+  .section-header h2 { line-height: 1.5; }
+  .section-header > button { align-self: flex-start; }
+  .city-story-caption > span, .culture-story-copy > span { font-size: 14px; }
+  .city-story-caption strong, .culture-story-copy strong { font-size: 17px; }
+  .metropolis .new-egypt .modern-grid { grid-template-rows: 250px 235px 250px; }
+  .culture-world .culture-scene-cards { grid-template-rows: 250px 230px 245px; }
+  .city-era-info > span, .culture-street-copy p, .vignette-head p { font-size: 15px; }
+  .city-era-info strong { font-size: 16px; }
+  .culture-sign { inset-inline-end: 12px; top: 12px; min-inline-size: 76px; min-block-size: 64px; }
+  .culture-street-copy { padding-block-start: 105px; }
+  .time-choice { flex: 1 1 120px; font-size: 14px; }
+  .time-switch-track { display: none; }
+  .time-stage, .metropolis .time-stage { min-block-size: 0; }
+  #timeline .era-pill { min-block-size: 285px !important; }
+  #timeline .era-copy { padding: 22px; }
+  #timeline .era-copy p { font-size: 15px; }
+  #timeline .era-image { min-block-size: 250px; height: 250px; }
+  #timeline #era-image { height: 210px; }
+  #heritage-gallery { margin-inline: 8px; }
+  #heritage-gallery .heritage-gallery-heading { align-items: flex-start; }
+  #heritage-gallery .heritage-gallery-mark { inline-size: 44px; block-size: 44px; }
+  #heritage-gallery .heritage-category { min-block-size: 152px !important; }
+  #heritage-gallery .tomb-experience { height: 350px; min-height: 350px; }
+  #heritage-gallery .tomb-models { padding: 10px !important; gap: 8px !important; }
+  #heritage-gallery .tomb-models #heritage-preview {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 8px !important;
+  }
+  #heritage-gallery .tomb-models #heritage-preview .heritage-preview-card {
+    height: 132px !important;
+    min-height: 132px;
+    max-height: none;
+  }
+  #heritage-gallery .tomb-models #heritage-preview .heritage-preview-label { inset-inline: 7px; bottom: 7px; gap: 2px; }
+  #heritage-gallery .tomb-models #heritage-preview .heritage-preview-label strong { font-size: 14px; line-height: 1.45; }
+  #heritage-gallery .tomb-models #heritage-preview .heritage-preview-label small { font-size: 13px; }
+  #heritage-gallery .tomb-models .tomb-models-title { font-size: 14px !important; }
+  #heritage-gallery .tomb-models .tomb-models-title small { font-size: 13px !important; }
+  #heritage-gallery .tomb-legend { top: 53% !important; }
+  #heritage-gallery .tomb-legend strong { font-size: 21px !important; }
+  #heritage-gallery .tomb-legend small { font-size: 13px !important; }
+  #heritage-full .heritage-full-heading h4 { font-size: 25px; }
+  #heritage-full .heritage-piece { height: 285px; }
+  #heritage-full .heritage-piece-content { padding: 10px; }
+  #heritage-full .heritage-piece-title { font-size: 16px; }
+  #heritage-full .heritage-piece-location, #heritage-full .heritage-piece-description { font-size: 13px; }
+  .dialog-visual { height: 180px; }
+  .dialog-top > h2 { flex: 1 1 170px; font-size: 23px; }
+  #favorites-list { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 600px) {
+  .voyage .mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 170px; gap: 9px; }
+  .voyage .mosaic .card:nth-child(n) { grid-column: span 1; grid-row: span 1; }
+  .voyage .mosaic .card:first-child { grid-column: 1 / -1; grid-row: span 1; }
+  .voyage .mosaic .card .ctitle { font-size: 17px; inset-inline-end: 12px; top: 14px; max-inline-size: calc(100% - 24px); }
+  .voyage .mosaic .card:first-child .ctitle { font-size: 23px; }
+  .voyage .mosaic .card .csub { inset-inline-end: 10px; bottom: 12px; font-size: 13px; }
+  .card .top-tag { inset-inline-start: 10px; top: 10px; }
+}
+@media (max-width: 360px) {
+  .journey-choices { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-rows: minmax(235px, auto); }
+  .journey-choice:nth-child(n) { grid-column: 1; grid-row: auto; }
+  .choice-history .choice-text { inset-inline: 16px; }
+  .choice-history .choice-visual { font-size: 125px; }
+  .choice-text { inset-inline: 16px; bottom: 16px; }
+  .choice-places .choice-text { inset-inline: 16px; }
+  .wayfinder-next { max-inline-size: 94px; }
+  .city-era-card { grid-template-columns: 74px minmax(0,1fr); }
+  .city-era-photo { width: 74px; }
+  #heritage-gallery .heritage-gallery-heading { gap: 9px; }
+  #heritage-gallery .heritage-gallery-mark { display: none; }
+  #heritage-gallery .tomb-experience { height: 365px; min-height: 365px; }
+  #heritage-gallery .tomb-models #heritage-preview .heritage-preview-card { height: 138px !important; min-height: 138px; }
+  #heritage-full .heritage-photo-grid { grid-template-columns: 1fr; }
+  #heritage-full .heritage-piece { height: 275px; }
+  #heritage-full .heritage-piece-title { font-size: 17px; }
+  #heritage-full .heritage-piece-description { font-size: 14px; }
+}
+@media (hover: none) {
+  .rail-card:hover, .journey-choice:hover, #timeline .era-pill:hover { transform: none; translate: none; }
+  .card:hover .back, .rail-card:hover .rail-photo img, .city-story-card:hover .city-story-photo img,
+  .culture-story:hover .culture-story-photo img { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .js-enhanced .reveal { opacity: 1 !important; transform: none !important; }
+}

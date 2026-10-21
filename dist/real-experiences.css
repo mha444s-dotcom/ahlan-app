@@ -1,0 +1,21 @@
+﻿.card { position: relative; min-inline-size: 0; border: 1px solid var(--color-line); border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); overflow: hidden; }
+.real-card-open { display: block; inline-size: 100%; padding: 0; background: transparent; text-align: start; }
+.photo { inline-size: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-soft); }
+.photo picture, .photo img { display: block; inline-size: 100%; block-size: 100%; }
+.photo img { object-fit: cover; transition: transform .2s ease; }
+.card h3 { margin: 14px 14px 5px; padding-inline-end: 0; font-size: 1rem; font-weight: 800; line-height: 1.7; }
+.card p { margin: 0 14px; font-size: .75rem; line-height: 1.8; color: var(--color-muted); }
+.price { margin: 12px 14px 0; font-size: .75rem; font-weight: 800; color: var(--color-gold); }
+.heart { position: absolute; inset-inline-end: 10px; inset-block-start: 10px; z-index: 2; display: inline-grid; place-items: center; min-inline-size: 40px; min-block-size: 40px; padding: 8px; border: 1px solid var(--color-line); border-radius: 50%; background: var(--color-surface); box-shadow: 0 2px 8px rgb(0 0 0 / 10%); }
+.heart[aria-pressed="true"] { background: var(--color-gold-soft); border-color: var(--color-gold-line); }
+.badge { position: absolute; inset-inline-start: 10px; inset-block-start: 14px; max-inline-size: calc(100% - 72px); padding: 4px 10px; border: 1px solid rgb(0 0 0 / 6%); border-radius: 8px; background: var(--color-gold); color: var(--color-ink); font-size: .625rem; font-weight: 800; }
+.photo-credit { margin: 10px 14px 14px; font-family: Cairo, Arial, sans-serif; font-size: .6875rem; line-height: 1.9; color: var(--color-muted); overflow-wrap: anywhere; }
+.photo-credit a { color: inherit; }
+.real-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 16px; }
+.real-actions a { display: inline-flex; align-items: center; gap: 4px; min-block-size: 44px; padding: 10px 12px; border: 1px solid var(--color-line); border-radius: var(--radius-control); background: var(--color-surface); font-size: .75rem; text-decoration: none; }
+@media (hover: hover) {
+  .real-card-open:hover .photo img { transform: scale(1.025); }
+  .card:hover { border-color: var(--color-line-strong); box-shadow: var(--shadow-card-hover); }
+  .heart:hover { background: var(--color-primary-soft); }
+  .real-actions a:hover { background: var(--color-primary-soft); }
+}

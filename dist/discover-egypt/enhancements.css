@@ -1,0 +1,50 @@
+/* Image availability and relocated source attribution; confined to Discover. */
+[data-discover-body] > main {
+  padding-inline-start: max(0px, calc(env(safe-area-inset-right, 0px) - var(--discover-right, 0px)));
+  padding-inline-end: max(0px, calc(env(safe-area-inset-left, 0px) - var(--discover-left, 0px)));
+}
+dialog {
+  max-width: min(580px, calc(var(--discover-width, 100vw) - max(28px, calc(env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px) + 28px))));
+}
+.heritage-image-placeholder { background: #eee4d4 !important; }
+.heritage-image-placeholder > img { object-fit: contain !important; object-position: center 22% !important; padding: 14px 12px 55% !important; background: none !important; filter: none !important; }
+.heritage-image-status { position: absolute; inset-block-start: 8px; inset-inline-start: 8px; z-index: 4; max-width: calc(100% - 16px); padding: 4px 8px; border-radius: 6px; background: #fff8ed; color: #59422e; font-size: 12px; line-height: 1.5; pointer-events: none; }
+.heritage-preview-card.heritage-image-placeholder > img { padding: 22px 8px 36px !important; object-position: center !important; }
+.heritage-preview-card .heritage-image-status { inset-block-start: auto; inset-block-end: 0; inset-inline: 0; border-radius: 0; font-size: 11px; text-align: center; }
+.dialog-visual.heritage-image-placeholder { position: relative; }
+.dialog-visual.heritage-image-placeholder > img { padding: 32px !important; }
+.sources-licenses { color: #39291f; background: #fffaf2; }
+.sources-licenses .dialog-top { align-items: start; gap: 12px; }
+.sources-licenses h2 { margin: 0; font-size: 22px; }
+.sources-licenses .archive-credits { margin-block-start: 20px; font-size: 15px; line-height: 1.8; }
+.sources-licenses summary { min-height: 44px; padding-block: 10px; cursor: pointer; font-weight: 700; }
+.sources-licenses .archive-credits > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.sources-licenses a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 10px; color: #17576c; text-decoration: underline; }
+.sources-licenses button,.sources-open { min-height: 44px; }
+#heritage-full .heritage-full-heading :is(h2,h3,h4) { color: #482c32 !important; }
+#heritage-full #heritage-close { color: #482c32 !important; background: #fff8ed !important; border: 1px solid #a47b50 !important; }
+#heritage-full #heritage-filters button { color: #573d30 !important; background: #fff8ed !important; border-color: #b59a76 !important; }
+#heritage-full #heritage-filters button.active { color: #fff9ef !important; background: #75404b !important; border-color: #75404b !important; }
+#heritage-full #heritage-filters small { color: inherit !important; }
+#heritage-full .heritage-piece-content { background: #291b22f2; padding: 10px; border-radius: 8px; }
+#heritage-full .heritage-piece-title { font-size: 17px !important; line-height: 1.6 !important; }
+#heritage-full .heritage-piece-description { font-size: 14px !important; line-height: 1.8 !important; }
+#info-dialog .dialog-top .kicker { color: #ecc892 !important; }
+.sources-licenses .dialog-body { color: #39291f; background: #fffaf2; --discover-focus: #94602e; }
+.sources-licenses .dialog-body p { color: #5c493a; }
+.site-footer .foot-flex p { font-size: 14px; }
+.hero-label small,.greek-keywords span,.greek-artifact-caption small,.greek-collection-head small,.modern-tiles-intro span,.time-choice small,.culture-sign small { font-size: 13px !important; line-height: 1.75; }
+.modern-tiles-intro span { font-size: 15px !important; }
+#heritage-gallery .tomb-legend { background: #20180de8; padding: 10px 12px !important; border-radius: 8px; margin-inline: 8px; }
+#heritage-gallery .tomb-legend strong { color: #fff2d8 !important; }
+#heritage-gallery .tomb-legend small { color: #f3dfbf !important; }
+@media (max-height: 500px) and (orientation: landscape) {
+  .dialog-visual { height: 100px; }
+  .dialog-body { padding: 14px 18px; }
+  #heritage-full .heritage-full-heading { padding-block: 10px; }
+  #heritage-full .heritage-full-heading :is(h2,h3,h4) { font-size: 21px; }
+}
+[data-effects-paused] *, [data-effects-paused]::before, [data-effects-paused]::after { animation-play-state: paused !important; }
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

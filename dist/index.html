@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4B3528">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="أهلاً">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/apple-touch-icon.png">
+<script type="module" src="pwa.js"></script>
+<title>أهلاً — حياتك في مصر</title>
+<link rel="icon" type="image/png" href="assets/ahlan-ui-icons/64/home.png">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="design-system.css">
+<link rel="stylesheet" href="app-v3.css">
+<link rel="stylesheet" href="service-carousel.css">
+<link rel="stylesheet" href="category-art.css">
+<link rel="stylesheet" href="real-experiences.css">
+<link rel="stylesheet" href="compact-experiences.css">
+<link rel="stylesheet" href="brand-icons.css">
+<link rel="stylesheet" href="interface-sample.css">
+<link rel="stylesheet" href="explore-prototype.css">
+<link rel="stylesheet" href="pwa.css">
+<link rel="stylesheet" href="app-quality.css">
+</head>
+<body>
+<header class="site-header" lang="ar" dir="rtl">
+<div class="top">
+<div class="logo">أهلاً<i>
+</i>
+</div>
+<button class="location" id="location">
+<div class="muted">أنت الآن في</div>⌖ <strong id="city">القاهرة، مصر</strong> ﹀</button>
+<div class="spacer">
+</div>
+<nav class="nav" aria-label="التنقل الرئيسي">
+<button class="active" data-nav="home">
+<span>◉</span>الرئيسية</button>
+<button data-nav="map">
+<span>♧</span>قريب منك</button>
+<button data-nav="saved">
+<span>♡</span>المفضلة</button>
+<button data-nav="plan">
+<span>▤</span>خطتي</button>
+<button data-nav="profile">
+<span>☻</span>حسابي</button>
+</nav>
+<button class="lang" onclick="showLanguages()" aria-label="اللغة: العربية"><img class="brand-icon" data-icon="language" width="24" height="24" src="assets/ahlan-ui-icons/64/language.webp" srcset="assets/ahlan-ui-icons/32/language.webp 32w, assets/ahlan-ui-icons/64/language.webp 64w, assets/ahlan-ui-icons/128/language.webp 128w" sizes="24px" alt="" aria-hidden="true"><span class="lang-label">العربية</span><span class="lang-chevron">⌄</span></button>
+<button class="avatar" onclick="profile()" aria-label="حسابي">☺</button>
+</div>
+</header>
+<main id="main">
+<p id="storageNotice" class="section-note" role="status" hidden>
+</p>
+<div id="appStatus" class="sr-only" role="status" aria-live="polite">
+</div>
+<h2 id="journeyChoicesTitle">كيف يمكننا مساعدتك؟</h2>
+<div class="tabs" aria-label="اختر قسمًا">
+<button class="tab active" data-tab="explore">اكتشف مصر</button>
+<button class="tab" data-tab="outside">أنا خارج مصر</button>
+<button class="tab" data-tab="inside">أنا في مصر</button>
+</div>
+<section id="journeyIntro" class="journey-intro" hidden></section>
+<label class="search">
+<span>⌕</span>
+<input id="search" dir="auto" autocomplete="off" placeholder="ماذا تحتاج في مصر؟" aria-label="ابحث عن مكان أو خدمة">
+</label>
+<div id="home" lang="ar" dir="rtl">
+<div class="home-discovery">
+<section class="hero">
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1600&q=85" alt="أهرامات الجيزة في مصر">
+<div class="hero-copy">
+<div class="eyebrow">رحلتك تبدأ من هنا</div>
+<h1>مصر، بكل حكاياتها.<br>اكتشفها على طريقتك</h1>
+<p>أماكن تستحق الزيارة، وتجارب تستحق تعيشها.</p>
+<button class="yellow" onclick="scrollToExperiences()">خطّط لخروجة النهارده ←</button>
+<small>GIZA, EGYPT · 29.9792° N</small>
+</div>
+
+</section>
+<div class="home-entries">
+<button class="home-entry entry-government" onclick="openContent(0)"><img class="brand-icon" src="assets/ahlan-ui-icons/256/procedures.webp" width="96" height="96" alt="" aria-hidden="true"><span><small>خطوتك الجاية، أوضح</small><strong>إجراءاتك في مصر</strong><span>تأشيرات، إقامة وتصاريح عمل ←</span></span></button>
+<button class="home-entry entry-tourism" onclick="openContent(9)"><img class="brand-icon" src="assets/ahlan-ui-icons/256/tourism.webp" width="96" height="96" alt="" aria-hidden="true"><span><small>حكاية في كل مشوار</small><strong>اكتشف وجهتك الجاية</strong><span>مدن، أنشطة ومعلومات للزيارة ←</span></span></button>
+</div>
+</div>
+<section class="needs-panel" aria-labelledby="needsTitle">
+<div class="sectionhead">
+<div><span class="panel-kicker">حياتك هنا، أسهل</span><h2 id="needsTitle">ماذا تحتاج في مصر؟</h2></div>
+<button class="link" onclick="allServices()">كل الخدمات ←</button>
+</div>
+<div class="services" id="services">
+</div>
+</section>
+<section id="experiences">
+<div class="sectionhead">
+<h2 id="resultsTitle">تجارب تستاهل المشوار</h2>
+<span class="muted">اختيارات لرحلة مختلفة</span>
+</div>
+<div class="filters" id="filters">
+</div>
+<div class="cards" id="cards">
+</div>
+</section>
+<section id="editorial">
+<div class="sectionhead">
+<h2>مصر بعيون أهلها</h2>
+<span class="muted">دليلك لحكايات جديدة</span>
+</div>
+<div class="guides">
+<button class="guide" onclick="guide('القاهرة على مهلك','ابدأ يومك بجولة في شوارع المعز، ثم قهوة في خان الخليلي، واختمه بمركب على النيل. احفظ التجارب المفضلة لتجميع خطتك.')">
+<img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=900&q=85" alt="عمارة القاهرة التاريخية">
+<div>
+<small>دليل المدينة · ٦ محطات</small>
+<h3>القاهرة على مهلك</h3>
+<p>من زحمة الحكايات لهدوء النيل ←</p>
+</div>
+</button>
+<button class="guide" onclick="guide('أول مرة في مصر؟','رتّب انتقالك من المطار، واختر سكنك، وتعرّف على خدمات الاتصالات والمواصلات. ستجد أقسام الإقامة والترجمة والتعليم في «أنا في مصر»، وتجهيزات السفر في «أنا خارج مصر».')">
+<img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=85" alt="مشهد من مصر">
+<div>
+<small>خطوة بخطوة</small>
+<h3>أول مرة في مصر؟</h3>
+<p>كل اللي تحتاجه لبداية أسهل ←</p>
+</div>
+</button>
+</div>
+</section>
+<section class="assist">
+<span class="symbol">✦</span>
+<div>
+<h3>محتاج حد يدلّك؟</h3>
+<p>من أول سؤال لحد أول مشوار، إحنا معاك.</p>
+</div>
+<button class="yellow" onclick="assistant()">اسأل مساعد أهلاً ←</button>
+</section>
+<p class="note">الأماكن في هذا القسم حقيقية والصور فوتوغرافية موثّقة. الحجز والدفع غير متاحين في نموذج التصميم.</p>
+</div>
+</main>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+<div class="modal" id="modal" lang="ar" dir="rtl" role="dialog" aria-modal="true" tabindex="-1">
+</div>
+</div>
+<script src="app-core.js" defer>
+</script>
+<script src="content-data.js" defer>
+</script>
+<script src="journey-data.js" defer></script>
+<script src="expanded.js" defer>
+</script>
+<script src="legacy-experiences.js" defer>
+</script>
+<script src="real-experiences.js" defer>
+</script>
+<script src="service-carousel.js" defer>
+</script>
+<script src="compact-experiences.js" defer>
+</script>
+<script src="brand-icons.js" defer>
+</script>
+<script src="interface-sample.js" defer></script>
+<script src="explore-prototype.js" defer></script>
+<script src="app-v3.js" defer>
+</script>
+<script src="ui-layout.js" defer></script>
+</body>
+</html>

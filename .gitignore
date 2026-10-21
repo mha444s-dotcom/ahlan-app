@@ -1,0 +1,76 @@
+﻿# Local rollback points and unrelated storage-migration fixtures are never source.
+/_backups/
+/_migration-tests/
+/maintenance/storage-migration/test-artifacts/
+/node_modules/
+/release/
+
+# Real-browser runs contain disposable profiles, caches, logs and screenshots.
+# Keep the browser test scripts themselves in source control.
+/.chrome-*/
+/tests/browser-artifacts/
+/tests/latest-results.tap
+/design/**/profile/
+/design/**/profile-*/
+/design/**/*-profile/
+/design/**/qa/profile-*/
+/design/**/browser-qa/profile-*/
+/design/approved-icon-system/exports/
+/design/approved-icon-system/qa/
+
+# Generated comparison evidence and rollback copies are local review artifacts.
+# Do not ignore the reusable icon sources, references, tooling or test code.
+/design/app-review-*/
+/design/mobile-review-*/
+/design/production-size-*/
+/design/size-experiments/
+/design/**/prechange/*
+/design/native-discover/retired-embedding/
+/design/discover-package-integration/audit/
+/design/discover-package-integration/source/discover_egypt_source.html
+
+# The byte-exact approved input is tracked in maintenance/sources/ as a verified
+# gzip archive below GitHub's 50 MiB warning threshold. Original snapshots above
+# remain untouched locally and are excluded from new Git commits.
+
+# Locally downloaded encoder executables are reproducible developer tools.
+# Their license, provenance and installation notes remain reviewable source.
+/maintenance/tools/**
+!/maintenance/tools/**/
+!/maintenance/tools/**/LICENSE*
+!/maintenance/tools/**/COPYING*
+!/maintenance/tools/**/PROVENANCE*
+!/maintenance/tools/**/provenance*
+!/maintenance/tools/**/README*
+
+# Generated storage audit reports and comparison screenshots.
+/design/production-size-review-*/
+/PRODUCTION_SIZE_REPORT.ar.md
+
+# Machine-specific hosting identity and unrelated user-data migration records.
+/.openai/
+/maintenance/storage-migration/
+/maintenance/*.json
+/maintenance/PENDING_DELETE.ar.md
+/*_REPORT.ar.md
+
+# Prior visual QA documents/screenshots stay local; preserve reusable art inputs.
+/design/explore-prototype-review/
+/design/explore-rebuild/
+/design/header-scroll/
+/design/native-discover/
+/design/discover-package-integration/
+
+# Never commit credentials, editor state, or deployment run evidence.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.DS_Store
+Thumbs.db
+/deployment-reports/
+/.vscode/*
+!/.vscode/tasks.json

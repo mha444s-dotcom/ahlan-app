@@ -1,0 +1,112 @@
+/* Shared usability repairs. No header/navigation restyling or protected image rules.
+   This file deliberately stays outside Discover Egypt's isolated shadow styles. */
+
+/* Comfortable reading for service, account, journey and detail content. */
+body main :is(.section-banner p,.topic-block p,.detail-card p,.journey-intro p,.journey-gap),
+body .modal p { font-size: .9375rem; line-height: 1.9; }
+body main :is(.section-note,.source-line,.sample-search-status,.sample-intro,#interestList,#reminderList,#profileStatus,#reminderStatus),
+body main .section-page label,
+body main .assistant-question { font-size: .875rem; line-height: 1.85; }
+body main .sample-content-layout :is(.section-menu button,.save-topic,.sample-block-filters button),
+body main .reminder-row button { font-size: .8125rem; }
+body main .sample-content-layout details.topic-block :is(summary,p),
+body main .gov-field-list > span,
+body main .gov-accordion-body :is(.gov-availability,.gov-missing-data) { font-size: .875rem; }
+body main .sample-group strong,
+body main .gov-type strong { font-size: .875rem; }
+body main :is(.sample-meta,.sample-group small,.gov-type small,.gov-module-heading small,.gov-accordion > summary small),
+body main .sample-banner .muted { font-size: .75rem; line-height: 1.8; }
+body main .sample-city-copy p,
+body main .sample-places .card p { font-size: .875rem; line-height: 1.85; }
+body main .sample-places .card .photo-credit,
+body main .photo-credit,
+body .modal .photo-credit { font-size: .75rem; line-height: 1.85; }
+
+/* The original decorative gold is too pale for small text on a white card. */
+body main .price { color: #805724; }
+body[data-design-sample]:not([data-design-sample=""]) main .price { color: #173e63; }
+
+/* Form text remains at 16px on phones, avoiding focus zoom in mobile Safari. */
+body main :is(.search input,.section-page input,.section-page select,.section-page textarea),
+body .modal :is(input,select,textarea) { font-size: 1rem; min-inline-size: 0; max-inline-size: 100%; }
+body main .section-page :is(input,select,textarea),
+body .modal :is(input,select,textarea) { min-block-size: 48px; }
+
+/* Touch areas for existing controls; original icons retain their own size. */
+body .close,
+body main .heart { min-inline-size: 44px; min-block-size: 44px; }
+body main .arrow-button,
+body main .carousel-controls button { min-inline-size: 44px; min-block-size: 44px; }
+body main .source-line a {
+  display: inline-flex; align-items: center;
+  min-block-size: 44px; max-inline-size: 100%;
+  text-decoration: underline; text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+body main .topic-block summary { min-block-size: 44px; padding-block: 6px; }
+body main .sample-content-layout details.topic-block summary { min-block-size: 44px; }
+body .modal :is(button,.chip,.back,.save-topic) { min-block-size: 44px; }
+
+/* Keep long Arabic/English labels inside their original flexible cards. */
+body main :is(.journey-links button,.sample-group,.sample-practical-item,.sample-activity,.sample-city-copy,.topic-top,.gov-module-heading) { min-inline-size: 0; }
+body main :is(.sample-group strong,.sample-group small,.gov-type strong,.gov-type small,.journey-links button > span,.journey-links small,.reminder-row > span,.sample-practical-item h3,.sample-activity h3) { overflow-wrap: anywhere; }
+body main .gov-module-heading h3 { min-inline-size: 0; }
+body main .gov-module-heading small { flex-shrink: 0; }
+body main .sample-practical-item > :not(.sample-topic-icon),
+body main .sample-activity > :not(.sample-topic-icon) { min-inline-size: 0; }
+
+/* All controls get a visible ring on both the light and dark card surfaces. */
+html body[data-design-sample] :is(button,a,input,select,textarea,summary,[tabindex]):focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px #173e63;
+}
+@media (forced-colors: active) {
+  html body[data-design-sample] :is(button,a,input,select,textarea,summary,[tabindex]):focus-visible {
+    outline: 3px solid Highlight; outline-offset: 3px; box-shadow: none;
+  }
+}
+
+/* Existing dialogs respect device notches; no changes to normal page geometry. */
+body .overlay {
+  padding: max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+}
+body .modal {
+  max-block-size: calc(100dvh - max(16px,env(safe-area-inset-top,0px)) - max(16px,env(safe-area-inset-bottom,0px)));
+  scrollbar-gutter: stable;
+}
+@media (max-width: 767px) {
+  body main .home-entry small,
+  body main .home-entry > span > span { font-size: .75rem; line-height: 1.85; }
+  body main :is(.assist p,.guide p,.guide small,.city-context p,.card p,.sectionhead > .muted) { font-size: .875rem; line-height: 1.85; }
+  body main .note { font-size: .8125rem; line-height: 1.85; }
+  body main .gov-module-heading { flex-wrap: wrap; }
+  body main .gov-module-heading h3 { flex-basis: calc(100% - 56px); }
+  body main .gov-module-heading > small { margin-inline-start: 50px; }
+  body main .sample-content-layout .sample-activity { flex-wrap: wrap; }
+  body main .sample-content-layout .sample-activity > :not(.sample-topic-icon) { flex: 1 1 120px; }
+}
+
+/* Measured phone audit: source/license links were only 19px high at 10px. */
+body main .photo-credit a,
+body .modal .photo-credit a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-inline-size: 44px; min-block-size: 44px;
+  max-inline-size: 100%; margin-inline: 2px; padding: 4px;
+  vertical-align: middle; font-size: .75rem; line-height: 1.6;
+  text-decoration: underline; text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+body main .panel-kicker { font-size: .75rem; }
+body main .hero-copy p { font-size: .9375rem; line-height: 1.85; }
+body main .hero small { font-size: .75rem; }
+body[data-design-sample="home"] main .welcome-strip p { font-size: .875rem; line-height: 1.8; }
+body main .filters .chip,
+body main .city-context .chip,
+body main .footerlinks button { font-size: .8125rem; }
+/* Only text changes here: the protected pictures keep every existing size,
+   URL, fit, padding, crop and rendering rule. */
+body[data-design-sample="home"] main .service small { font-size: .75rem; line-height: 1.8; }
+
+/* Existing sample variants explicitly set credit text to 9–10px. */
+body[data-design-sample]:not([data-design-sample=""]) :is(main,.modal) .photo-credit { font-size: .75rem; line-height: 1.85; }
