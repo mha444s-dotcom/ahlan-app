@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),{spawnSync}=require('node:child_process');
 const root=path.resolve(__dirname,'../..');
-const sha=process.env.GITHUB_SHA||spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).stdout?.trim();
+const sha=process.env.CF_PAGES_COMMIT_SHA||process.env.GITHUB_SHA||spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).stdout?.trim();
 if(!/^[a-f0-9]{40}$/.test(sha||''))throw Error('Cannot stamp an unknown source commit.');
 const worker=fs.readFileSync(path.join(root,'release/ahlan/sw.js'),'utf8');
 const revision=worker.match(/\bVERSION\s*=\s*["']([a-f0-9]+)["']/)?.[1];

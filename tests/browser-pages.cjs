@@ -158,6 +158,7 @@ async function run(config) {
     await startBrowser();
     await check('Main routes and all 14 content sections open under the project path',async()=>{
       const routes=[['home','homeScreen()','Ahlan.state.view==="home"'],['outside','navigate({view:"journey",tab:"outside",query:""})','Ahlan.state.tab==="outside"&&document.querySelectorAll("#journeyPage .journey-card").length>0'],['inside','navigate({view:"journey",tab:"inside",query:""})','Ahlan.state.tab==="inside"&&document.querySelectorAll("#journeyPage .journey-card").length>0'],['saved','navigate({view:"saved",query:""})','Ahlan.state.view==="saved"'],['plan','navigate({view:"plan",query:""})','Ahlan.state.view==="plan"']];
+      routes.push(['profile','profile()','Ahlan.state.view==="section"&&Ahlan.state.section===13&&document.querySelector("#localProfile")!==null']);
       for(const [,action,expected]of routes) {await evaluate(action);assert.equal(await evaluate(expected),true);}
       const count=await evaluate('Ahlan.sections.length'); assert.equal(count,14);
       for(let i=0;i<count;i++) {await evaluate('openContent('+i+',0)');assert.equal(await evaluate('Ahlan.state.section'),i);assert(await evaluate('document.querySelector("#sectionPage").classList.contains("visible")&&document.querySelector("#sectionPage").textContent.trim().length>50'));}

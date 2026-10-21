@@ -74,3 +74,12 @@ Thumbs.db
 /deployment-reports/
 /.vscode/*
 !/.vscode/tasks.json
+
+# Cloudflare local state, credentials and temporary development bindings.
+.wrangler/
+.dev.vars
+.dev.vars.*
+/maintenance/tools/cloudflare-cli/
+/maintenance/tools/cloudflare-state/
+**/node_modules/
+/maintenance/tools/cloudflare-build-check/

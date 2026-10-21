@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib'),crypto=require('node:crypto'),{spawnSync}=require('node:child_process');
 const ROOT=path.resolve(__dirname,'../..');
-const forbidden=/(^|\/)(?:\.git|\.openai|node_modules|_backups|_migration-tests|browser-artifacts|storage-migration|prechange|profile|Cache|Code Cache|GPUCache|deployment-reports)(?:\/|$)|(?:^|\/)\.env(?:\.|$)|\.(?:vscdb|sqlite|db|pem|pfx|p12|key|log|tap|exe|dll)$/i;
+const forbidden=/(^|\/)(?:\.git|\.openai|\.wrangler|node_modules|_backups|_migration-tests|browser-artifacts|storage-migration|prechange|profile|Cache|Code Cache|GPUCache|deployment-reports)(?:\/|$)|(?:^|\/)\.(?:env|dev\.vars)(?:\.|$)|\.(?:vscdb|sqlite|db|pem|pfx|p12|key|log|tap|exe|dll)$/i;
 const patterns=[
   ['private-key',/-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----/],
   ['github-token',/\b(?:gh[pousr]_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{40,})\b/],
