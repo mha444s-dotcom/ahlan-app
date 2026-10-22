@@ -12,7 +12,13 @@ const key = request => typeof request === 'string' ? request : request.url;
 function fixture(network = async request => new Response(key(request), {headers:{'Content-Type':'text/plain'}})) {
   const listeners = new Map();
   const stores = new Map();
-  const failures = {put:false, install:false};
+  const failures = {put:false, install:false, redirectHtml:false};
+  function redirected(response) {
+    const clone=response.clone.bind(response);
+    Object.defineProperty(response,'redirected',{value:true});
+    response.clone=()=>redirected(clone());
+    return response;
+  }
   const caches = {
     async open(name) {
       if (!stores.has(name)) stores.set(name, new Map());
@@ -27,7 +33,11 @@ function fixture(network = async request => new Response(key(request), {headers:
         async keys() { return [...values.keys()].map(url => new Request(url)); },
         async addAll(requests) {
           if (failures.install) throw new Error('404 shell dependency');
-          for (const request of requests) values.set(key(request), new Response('release:' + key(request)));
+          for (const request of requests) {
+            const url=key(request), html=failures.redirectHtml&&url.endsWith('.html');
+            const response=new Response('release:'+url, html?{headers:{'Content-Type':'text/html; charset=utf-8','Content-Encoding':'gzip','Content-Length':'1'}}:undefined);
+            values.set(url,html?redirected(response):response);
+          }
         }
       };
     },
@@ -108,6 +118,22 @@ test('uncached same-origin document gets honest offline page; unrelated requests
   assert.equal(await f.fetchEvent(base+'api/account'), undefined);
   assert.equal(await f.fetchEvent(base+'assets/home.png', {method:'POST',destination:'image'}), undefined);
   assert.equal(await f.fetchEvent('https://example.test/another-app/app.js'), undefined);
+});
+
+test('canonical HTML redirects are cached as exact non-redirected bytes for controlled navigation',async()=>{
+  const f=fixture(async()=>{throw Error('offline');});f.failures.redirectHtml=true;
+  await f.lifecycle('install');
+  for(const [url,options,file]of [[base,{mode:'navigate'},'index.html'],[base+'discover-egypt/page.html',{},'discover-egypt/page.html'],[base+'missing',{mode:'navigate'},'offline.html']]){
+    const response=await f.fetchEvent(url,options);assert.equal(response.redirected,false);
+    assert.equal(response.headers.get('Content-Type'),'text/html; charset=utf-8');
+    assert.equal(response.headers.get('Content-Encoding'),null);assert.equal(response.headers.get('Content-Length'),null);
+    assert.equal(await response.text(),'release:'+base+file);
+  }
+});
+
+test('failure to normalize redirected HTML rejects installation rather than activating a broken shell',async()=>{
+  const f=fixture();f.failures.redirectHtml=true;f.failures.put=true;
+  await assert.rejects(()=>f.lifecycle('install'),/QuotaExceededError/);
 });
 
 test('image cache stores only successful, sized local images and never 429 responses', async () => {

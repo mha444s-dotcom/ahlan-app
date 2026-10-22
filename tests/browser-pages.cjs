@@ -13,6 +13,7 @@ function options(args) {
   for (let i=0; i<args.length; i++) {
     const arg=args[i];
     if (arg==='--local') continue;
+    if (arg==='--canonical-html') {values.canonicalHtml=true;continue;}
     if (arg==='--help') return {help:true};
     const key={'--root':'root','--base-path':'basePath','--origin':'origin'}[arg];
     if (!key || !args[i+1] || args[i+1].startsWith('--')) throw Error('Usage: node tests/browser-pages.cjs [--local --root release/ahlan --base-path /ahlan-app/] [--origin https://owner.github.io/ahlan-app/]');
@@ -92,6 +93,7 @@ async function run(config) {
     await until('history.state?.discoverDialog!=='+JSON.stringify(id));
   }
   async function geometry() {
+    await until('[...document.querySelectorAll(".site-header,.tabs")].every(e=>e.getAnimations().every(a=>a.transitionProperty!=="transform"||a.playState!=="running"))',5000);
     return evaluate('(()=>{const box=e=>{const b=e.getBoundingClientRect();return {top:b.top,bottom:b.bottom,height:b.height};};return {header:box(document.querySelector(".site-header")),tabs:box(document.querySelector(".tabs")),scrollY};})()');
   }
   function visible(g) {assert(g.header.top>=-1 && g.tabs.top>=g.header.bottom-1,'Both headers visible: '+JSON.stringify(g));}
@@ -105,7 +107,13 @@ async function run(config) {
       try {pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400).end();return;}
       if (pathname===config.basePath.slice(0,-1)) {res.writeHead(301,{Location:config.basePath}).end();return;}
       if (!['GET','HEAD'].includes(req.method) || !pathname.startsWith(config.basePath) || pathname.includes('\\')) {res.writeHead(404).end();return;}
-      const relative=pathname.slice(config.basePath.length)||'index.html', file=path.resolve(publicRoot,relative);
+      let relative=pathname.slice(config.basePath.length)||'index.html';
+      if(config.canonicalHtml&&pathname.endsWith('.html')){
+        const canonical=pathname.endsWith('/index.html')?pathname.slice(0,-10):pathname.slice(0,-5);
+        res.writeHead(308,{Location:canonical}).end();return;
+      }
+      if(config.canonicalHtml&&!path.extname(relative)&&fs.existsSync(path.join(publicRoot,relative+'.html')))relative+='.html';
+      const file=path.resolve(publicRoot,relative);
       if (!file.startsWith(publicRoot+path.sep)) {res.writeHead(403).end();return;}
       fs.stat(file,(error,stat)=>{
         if(error||!stat.isFile()) {res.writeHead(404).end();return;}
@@ -270,6 +278,8 @@ async function run(config) {
       return {manifestURL:manifest.url,registration,installability};
     });
     await check('Normal reload is controlled and native Discover reloads offline from the project cache',async()=>{
+      const htmlCache=await evaluate('caches.keys().then(async names=>{const cache=await caches.open(names.find(n=>n.endsWith("-shell")));return Promise.all(["index.html","offline.html","discover-egypt/page.html"].map(async file=>{const r=await cache.match(new URL(file,location.href).href);return {file,present:!!r,redirected:r?.redirected};}));})');
+      assert(htmlCache.every(item=>item.present&&!item.redirected),'Cached HTML must be safe for controlled navigation: '+JSON.stringify(htmlCache));
       await explore(); await reload(); await until('!!navigator.serviceWorker.controller'); await until('document.querySelector("#explorePrototype")?.dataset.discoverMounted==="true"',60000);
       const caches=await evaluate('caches.keys().then(async names=>Promise.all(names.map(async name=>({name,count:(await(await caches.open(name)).keys()).length}))))');
       assert(caches.some(x=>x.name.endsWith('-shell')&&x.count>=48));
@@ -282,7 +292,7 @@ async function run(config) {
       await send('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});
       await delay(250); offline=false;
       await reload();await until('document.querySelector("#explorePrototype")?.dataset.discoverMounted==="true"',60000);
-      return {caches,counts,note:'Cached app code/data works offline. External images/APIs/fonts and unvisited art remain network-dependent.'};
+      return {caches,counts,htmlCache,note:'Cached app code/data works offline. External images/APIs/fonts and unvisited art remain network-dependent.'};
     });
     phase='final-resource-review'; await delay(300);
     const localResponses=responses.filter(x=>local(x.url)&&!x.offline);

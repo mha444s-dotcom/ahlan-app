@@ -45,6 +45,7 @@ test('The unchanged ship command targets Cloudflare at root and preserves GitHub
  const publish=fs.readFileSync(path.join(root,'maintenance/github/Publish.cjs'),'utf8');
  assert.match(publish,/waitCloudflare:waitDeployment/);assert.match(publish,/require\('\.\.\/cloudflare\/Wait-Cloudflare\.cjs'\)/);
  assert.match(publish,/'--base-path','\/'/);assert.doesNotMatch(publish,/wrangler.*(?:deploy|upload)|CLOUDFLARE_API_TOKEN/);
+ assert.match(publish,/'--canonical-html'/);
  const workflow=fs.readFileSync(path.join(root,'.github/workflows/pages.yml'),'utf8');
  assert.match(workflow,/actions\/deploy-pages@/);assert.match(workflow,/path: release\/ahlan/);
  const agents=fs.readFileSync(path.join(root,'AGENTS.md'),'utf8');assert.match(agents,/https:\/\/ahlan-app\.pages\.dev\//);assert.match(agents,/GitHub Pages remains an automatic backup/);

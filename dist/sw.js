@@ -3,7 +3,7 @@
 // Bump this release whenever deployed HTML, CSS, JavaScript, or local data change.
 // Installation commits the complete shell before it can become active. An update
 // waits for old app windows to close; it never replaces code beneath a live page.
-const VERSION = '48e606ec336ac9b3';
+const VERSION = 'd2eb054109296b9a';
 const BASE = new URL('./', self.location.href);
 const PREFIX = 'ahlan-pwa-' + encodeURIComponent(BASE.pathname) + '-';
 const SHELL_CACHE = PREFIX + VERSION + '-shell';
@@ -38,6 +38,21 @@ self.addEventListener('install', event => {
     const cache = await caches.open(SHELL_CACHE);
     // addAll rejects on any failed resource. A partial install cannot activate.
     await cache.addAll(SHELL.map(file => new Request(new URL(file, BASE).href, {cache: 'reload'})));
+    // Pages hosts may redirect index.html to / and remove other .html suffixes.
+    // A cached response that retains that redirect cannot satisfy Chrome's
+    // manual-redirect navigation requests. Keep the exact decoded HTML bytes
+    // and content headers, but store a fresh, non-redirected response.
+    for (const file of SHELL.filter(file => file.endsWith('.html'))) {
+      const url = new URL(file, BASE).href;
+      const response = await cache.match(url);
+      if (!response?.redirected) continue;
+      const headers = new Headers(response.headers);
+      headers.delete('Content-Encoding');
+      headers.delete('Content-Length');
+      await cache.put(url, new Response(await response.arrayBuffer(), {
+        status: response.status, statusText: response.statusText, headers
+      }));
+    }
   })());
 });
 
