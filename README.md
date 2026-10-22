@@ -2,9 +2,11 @@
 
 دليل عربي لاستكشاف مصر وخدمات الإقامة والزيارة، مع تجربة «اكتشف مصر» المدمجة ومعرض حضارة يضم 170 معلمًا و11 عصرًا وتسعة تصنيفات. تطبيق ويب ثابت يدعم RTL والتثبيت كتطبيق PWA.
 
-- الموقع: https://mha444s-dotcom.github.io/ahlan-app/
+- الموقع الأساسي: https://ahlan-app.pages.dev/
+- الرابط الاحتياطي المؤقت: https://mha444s-dotcom.github.io/ahlan-app/
 - المستودع: https://github.com/mha444s-dotcom/ahlan-app
-- النشر: GitHub Actions يبني ويختبر ثم ينشر **release/ahlan/** فقط.
+- النشر الأساسي: Cloudflare Pages عبر Git Integration من main؛ تُنشر **release/ahlan/** فقط.
+- GitHub Actions يبني ويختبر وينشر النسخة الاحتياطية الحالية بصورة مستقلة.
 
 ## التشغيل محليًا
 
@@ -42,9 +44,11 @@ node tests/browser-pages.cjs --local --root release/ahlan --base-path /ahlan-app
 npm run ship -- --message "Describe the completed change"
 ```
 
-أو من VS Code: **Terminal → Run Task → Ahlan: Test, build, commit and deploy**. تستخدم الدورة اتصال Git الآمن الموجود؛ لا تضع رمز دخول في الملفات. تفحص الملفات، تختبر، تبني، تختبر Chrome، تنشئ Commit على main وتنفّذ Push إلى ahlan-app فقط، ثم تنتظر نتيجة النشر. يتوقف الأمر عند أي فشل ولا ينفّذ Force Push. يجب إكمال العمل قبل تشغيله، وعدم تعديله بالتوازي أثناء الفحص.
+أو من VS Code: **Terminal → Run Task → Ahlan: Test, build, commit and deploy**. تستخدم الدورة اتصال Git الآمن الموجود؛ لا تضع رمز دخول في الملفات. تفحص الملفات، تختبر، تبني، تختبر Chrome من جذر النطاق، تنشئ Commit على main وتنفّذ Push إلى ahlan-app فقط، ثم تنتظر فحص Cloudflare الرسمي في GitHub وتطابق Commit الحي في deployment.json على الرابط الأساسي. لا تحتاج متابعة النشر إلى Cloudflare API Token جديد. يتوقف الأمر عند أي فشل ولا ينفّذ Force Push. يجب إكمال العمل قبل تشغيله، وعدم تعديله بالتوازي أثناء الفحص.
 
-طلبات السحب تُختبر دون نشر. النشر يتم من main أو التشغيل اليدوي للـworkflow على main. صلاحيات Pages وOIDC محصورة في مهمة النشر. لا يلزم إضافة مفتاح أو سر GitHub للمستودع.
+Cloudflare ينشر الإنتاج تلقائيًا من main؛ معاينات الفروع الأخرى معطلة حاليًا. GitHub Actions يفحص طلبات السحب دون نشرها، ويحدّث رابط Pages الاحتياطي من main أو تشغيل workflow يدوي عليه. صلاحيات GitHub Pages وOIDC محصورة في مهمة النشر الاحتياطية. لا يلزم إضافة أي مفتاح Cloudflare أو سر جديد للمستودع.
+
+إعداد Cloudflare: أمر البناء `npm ci --ignore-scripts --no-audit --no-fund && npm run build:cloudflare`، ومجلد المخرجات `release/ahlan`، ومجلد المشروع `/`، و`NODE_VERSION=24` و`SKIP_DEPENDENCY_INSTALL=true`. يشغّل build:cloudflare فحص المصدر والاختبارات ثم البناء وختم Commit. تم التحقق من عمل esbuild مع --ignore-scripts باستخدام الاعتماد المقفل.
 
 ## بنية المشروع
 
@@ -53,7 +57,8 @@ npm run ship -- --message "Describe the completed change"
 | dist/ | مصدر التطبيق والبيانات والصور الأصلية والأيقونات |
 | dist/discover-egypt/ | صفحة اكتشف مصر، مكوّن أصلي معزول داخل Shadow DOM؛ بدون iframe |
 | maintenance/production/ | البناء والتحقق وتحسينات الصور دون فقد |
-| maintenance/github/ | فحص أمان المصدر ودورة التسليم |
+| maintenance/github/ | فحص أمان المصدر ودورة التسليم والتحقق من Pages الاحتياطي |
+| maintenance/cloudflare/ | متابعة نشر Cloudflare من فحوص المستودع والتحقق من Commit الحي |
 | maintenance/sources/ | المصدر التصميمي المعتمد مضغوطًا، مع بيانات تحقق |
 | design/approved-icon-system/ | مصادر الأيقونات اللازمة لإعادة التوليد |
 | design-references/ | المراجع البصرية المعتمدة |
@@ -64,12 +69,12 @@ npm run ship -- --message "Describe the completed change"
 
 ## المسارات وPWA والبيانات
 
-التنقل يستخدم Hash Routing مثل `#/home` و`#/journey?tab=explore`. الموارد وManifest وService Worker تعمل من المسار النسبي /ahlan-app/؛ لا يلزم إعادة كتابة روابط الصفحات على الخادم.
+التنقل يستخدم Hash Routing مثل `#/home` و`#/journey?tab=explore`. الموارد وManifest وService Worker تستخدم مسارات نسبية؛ تعمل من `/` على Cloudflare ومن `/ahlan-app/` على GitHub Pages. لا يلزم إعادة كتابة روابط الصفحات على الخادم.
 
 يمكن تثبيت التطبيق عبر المتصفح الداعم وعلى iPhone عبر «إضافة إلى الشاشة الرئيسية». التخزين دون إنترنت يغطي هيكل التطبيق والموارد المحلية المخزنة ضمن حدود الكاش؛ الصور والخدمات الخارجية تحتاج الإنترنت. تحديثات العامل تنتظر إغلاق الصفحات القديمة لتجنب خلط الإصدارات.
 
-المفضلة والخطة والملف والتذكيرات محفوظة محليًا في المتصفح، وليست حسابات سحابية. بيانات localhost أو متصفح آخر لا تنتقل تلقائيًا إلى نطاق GitHub Pages. لا تُرفع بيانات استخدام المستخدم إلى GitHub. المصادر وتراخيص الصور موجودة داخل صفحة اكتشف مصر. أصول الطرف الثالث تظل خاضعة لتراخيصها.
+المفضلة والخطة والملف والتذكيرات محفوظة محليًا في المتصفح، وليست حسابات سحابية. بيانات localhost أو GitHub Pages أو متصفح آخر لا تنتقل تلقائيًا إلى نطاق Cloudflare. تظل بيانات الرابط القديم محفوظة على ذلك الرابط؛ المتصفح يعزل التخزين بحسب النطاق. لا تُرفع بيانات استخدام المستخدم إلى GitHub. المصادر وتراخيص الصور موجودة داخل صفحة اكتشف مصر. أصول الطرف الثالث تظل خاضعة لتراخيصها.
 
 ## التراجع
 
-لإلغاء تعديل منشور استخدم `git revert <commit>` ثم اختبر وادفع Commit التراجع؛ تعيد Actions نشر الإصدار المبني منه. لا تستخدم reset/force push. التاريخ المحلي السابق محفوظ في _backups/ خارج المستودع الجديد. احتفظ به وبنقاط الرجوع؛ لا ترفعهما.
+لإلغاء تعديل منشور استخدم `git revert <commit>` ثم اختبر وادفع Commit التراجع عبر أمر ship؛ تعيد Cloudflare نشر الإصدار منه وتحدّث Actions الوجهة الاحتياطية. لا تستخدم reset/force push. التاريخ المحلي السابق محفوظ في _backups/ خارج المستودع الجديد. احتفظ به وبنقاط الرجوع؛ لا ترفعهما.

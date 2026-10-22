@@ -1,7 +1,7 @@
 'use strict';
 const {spawnSync}=require('node:child_process'),path=require('node:path');
 const {gitFiles,checkFiles}=require('./Check-Publish.cjs');
-const {waitDeployment}=require('./Wait-Deployment.cjs');
+const {waitCloudflare:waitDeployment}=require('../cloudflare/Wait-Cloudflare.cjs');
 const ROOT=path.resolve(__dirname,'../..');
 function run(command,args,{capture=false}={}){
   const r=spawnSync(command,args,{cwd:ROOT,encoding:'utf8',stdio:capture?'pipe':'inherit',windowsHide:true,maxBuffer:32*1024*1024});
@@ -23,7 +23,7 @@ async function publish(args=process.argv.slice(2)){
   // No shell interpolation: commit messages are passed as one literal argument.
   run(process.execPath,['--run','test:ci']);
   run(process.execPath,['maintenance/github/Prepare-Release.cjs']);
-  run(process.execPath,['tests/browser-pages.cjs','--local','--root','release/ahlan','--base-path','/ahlan-app/']);
+  run(process.execPath,['tests/browser-pages.cjs','--local','--root','release/ahlan','--base-path','/']);
   // Detect edits made during validation, rather than committing an untested edit.
   const before=checkFiles(gitFiles());
   if(before.findings.length||before.fingerprint!==report.fingerprint)throw Error('Source changed during validation. Nothing was committed or pushed; rerun after finishing edits.');

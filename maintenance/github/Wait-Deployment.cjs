@@ -1,4 +1,6 @@
 'use strict';
+// Optional verifier for the preserved GitHub Pages backup. The ship command
+// waits for Cloudflare via maintenance/cloudflare/Wait-Cloudflare.cjs.
 const {request,credential,OWNER,REPO}=require('./Credentials.cjs');
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function waitDeployment(sha,{timeoutMs=15*60*1000,intervalMs=10000}={}){

@@ -14,15 +14,23 @@ After the requested app work is finished, run:
 `npm run ship -- --message "Clear description of the completed change"`
 
 This checks files, tests, builds, runs actual Chrome, commits, pushes to the reviewed
-`mha444s-dotcom/ahlan-app` main branch, and waits for Pages. Never trigger it on each
+`mha444s-dotcom/ahlan-app` main branch, and waits for Cloudflare Pages at
+`https://ahlan-app.pages.dev/`. It verifies the Cloudflare GitHub check and the
+exact commit in the live `deployment.json`. Never trigger it on each
 save or while work is incomplete. Respect any newer user instruction to avoid
 publishing. Stop on any test/build/auth/push/deployment failure; report the failure.
-Do not claim a successful deployment without checking the exact commit's Actions run
-and the live URL. Local-only reports can stay ignored. Do not overwrite unrelated
+Do not claim a successful deployment without checking the exact commit's Cloudflare
+check and live URL. GitHub Pages remains an automatic backup through the existing
+workflow; do not disable it without explicit user authorization. Cloudflare builds
+only `release/ahlan`, from this repository on main, with `npm run build:cloudflare`.
+Do not store Cloudflare credentials in the repository. Local-only reports can stay
+ignored. Do not overwrite unrelated
 unfinished changes. Never force push or rewrite published history.
 
 `safer-app` is explicitly outside scope: do not read, modify, delete, push to,
-configure, or otherwise operate on that repository.
+configure, or otherwise operate on that repository or the Safer Cloudflare project.
+Never change account-wide Cloudflare/GitHub integration settings or the access of
+other projects. Keep operations scoped to Ahlan.
 
 `npm run test:ci` works on a clean checkout. `tests/discover-package.cjs` is an
 additional historical local audit and requires ignored rollback snapshots; do not

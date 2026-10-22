@@ -36,3 +36,13 @@ test('Cloudflare build checks source and tests before packaging; no token or dir
  assert.equal(pkg.scripts['build:cloudflare'],'node maintenance/github/Check-Publish.cjs && npm run test:ci && npm run build && node maintenance/github/Stamp-Deployment.cjs');
  const scanner=require('../maintenance/github/Check-Publish.cjs');for(const p of ['.wrangler/config/default.enc','.dev.vars','.dev.vars.production'])assert.ok(scanner.forbidden.test(p),p);
 });
+test('The unchanged ship command targets Cloudflare at root and preserves GitHub Pages as backup',()=>{
+ const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));
+ assert.equal(pkg.scripts.ship,'node maintenance/github/Publish.cjs');
+ const publish=fs.readFileSync(path.join(root,'maintenance/github/Publish.cjs'),'utf8');
+ assert.match(publish,/waitCloudflare:waitDeployment/);assert.match(publish,/require\('\.\.\/cloudflare\/Wait-Cloudflare\.cjs'\)/);
+ assert.match(publish,/'--base-path','\/'/);assert.doesNotMatch(publish,/wrangler.*(?:deploy|upload)|CLOUDFLARE_API_TOKEN/);
+ const workflow=fs.readFileSync(path.join(root,'.github/workflows/pages.yml'),'utf8');
+ assert.match(workflow,/actions\/deploy-pages@/);assert.match(workflow,/path: release\/ahlan/);
+ const agents=fs.readFileSync(path.join(root,'AGENTS.md'),'utf8');assert.match(agents,/https:\/\/ahlan-app\.pages\.dev\//);assert.match(agents,/GitHub Pages remains an automatic backup/);
+});

@@ -78,7 +78,7 @@ function publishDouble({ branch = 'main', origins = [httpsOrigin], pushOrigins =
       gitFiles: () => ['dist/index.html'],
       checkFiles: () => reports?.[scans++] || { files: 1, bytes: 10, findings: [], fingerprint: 'unchanged' }
     },
-    './Wait-Deployment.cjs': { waitDeployment: async commit => wait.push(commit) }
+    '../cloudflare/Wait-Cloudflare.cjs': { waitCloudflare: async commit => wait.push(commit) }
   });
   return { ...loaded, calls, wait };
 }
