@@ -26,30 +26,42 @@
 <link rel="stylesheet" href="pwa.css">
 <link rel="stylesheet" href="app-quality.css">
 </head>
-<body>
+<body data-design-sample="home" data-explore-prototype="false">
+<script data-startup>
+// Set presentation before any app content is parsed; routing still belongs to app-core.
+(() => {
+  const match = location.hash.match(/^#\/(home|journey|saved|plan|section|gallery|trust|legacy)(?:\?(.*))?$/);
+  const params = new URLSearchParams(match?.[2]);
+  const view = match?.[1] === 'home' && params.get('tab') === 'live' ? 'journey' : match?.[1] || 'home';
+  const tab = params.get('tab') === 'live' ? 'inside' : ['outside','inside'].includes(params.get('tab')) ? params.get('tab') : 'explore';
+  const section = Number(params.get('section') || 0);
+  document.body.dataset.designSample = view === 'home' || view === 'journey' && tab === 'explore' ? 'home' : view === 'section' && (!Number.isInteger(section) || section < 0 || section >= 14 || section === 0) ? 'government' : view === 'section' && section === 9 ? 'tourism' : '';
+  document.body.dataset.explorePrototype = String(view === 'journey' && tab === 'explore');
+  document.documentElement.dataset.startupView = view;
+  if (view === 'journey' && tab === 'explore') {
+    const link = document.createElement('link'); link.rel = 'modulepreload';
+    link.href = 'discover-egypt/page.js'; document.head.append(link);
+  }
+})();
+</script>
 <header class="site-header" lang="ar" dir="rtl">
 <div class="top">
 <div class="logo">أهلاً<i>
 </i>
 </div>
 <button class="location" id="location">
-<div class="muted">أنت الآن في</div>⌖ <strong id="city">القاهرة، مصر</strong> ﹀</button>
+<div class="muted">أنت الآن في</div><span class="brand-replaced"><img class="brand-icon " data-icon="location" src="assets/ahlan-ui-icons/64/location.webp" srcset="assets/ahlan-ui-icons/32/location.webp 32w, assets/ahlan-ui-icons/64/location.webp 64w, assets/ahlan-ui-icons/128/location.webp 128w, assets/ahlan-ui-icons/256/location.webp 256w" sizes="22px" width="22" height="22" alt="" aria-hidden="true" draggable="false" decoding="async"></span> <strong id="city">القاهرة، مصر</strong> <span class="brand-replaced"><img class="brand-icon rotate-down" data-icon="arrow" src="assets/ahlan-ui-icons/64/arrow.webp" srcset="assets/ahlan-ui-icons/32/arrow.webp 32w, assets/ahlan-ui-icons/64/arrow.webp 64w, assets/ahlan-ui-icons/128/arrow.webp 128w, assets/ahlan-ui-icons/256/arrow.webp 256w" sizes="22px" width="22" height="22" alt="" aria-hidden="true" draggable="false" decoding="async"></span></button>
 <div class="spacer">
 </div>
 <nav class="nav" aria-label="التنقل الرئيسي">
-<button class="active" data-nav="home">
-<span>◉</span>الرئيسية</button>
-<button data-nav="map">
-<span>♧</span>قريب منك</button>
-<button data-nav="saved">
-<span>♡</span>المفضلة</button>
-<button data-nav="plan">
-<span>▤</span>خطتي</button>
-<button data-nav="profile">
-<span>☻</span>حسابي</button>
+<button class="active" data-nav="home"><img class="brand-icon " data-icon="home" src="assets/ahlan-ui-icons/64/home.webp" srcset="assets/ahlan-ui-icons/32/home.webp 32w, assets/ahlan-ui-icons/64/home.webp 64w, assets/ahlan-ui-icons/128/home.webp 128w, assets/ahlan-ui-icons/256/home.webp 256w" sizes="(min-width: 768px) 22px, 24px" width="24" height="24" alt="" aria-hidden="true" draggable="false" decoding="async"><span class="nav-label">الرئيسية</span></button>
+<button data-nav="map"><img class="brand-icon " data-icon="nearby" src="assets/ahlan-ui-icons/64/nearby.webp" srcset="assets/ahlan-ui-icons/32/nearby.webp 32w, assets/ahlan-ui-icons/64/nearby.webp 64w, assets/ahlan-ui-icons/128/nearby.webp 128w, assets/ahlan-ui-icons/256/nearby.webp 256w" sizes="(min-width: 768px) 22px, 24px" width="24" height="24" alt="" aria-hidden="true" draggable="false" decoding="async"><span class="nav-label">قريب منك</span></button>
+<button data-nav="saved"><img class="brand-icon " data-icon="heart" src="assets/ahlan-ui-icons/64/heart.webp" srcset="assets/ahlan-ui-icons/32/heart.webp 32w, assets/ahlan-ui-icons/64/heart.webp 64w, assets/ahlan-ui-icons/128/heart.webp 128w, assets/ahlan-ui-icons/256/heart.webp 256w" sizes="(min-width: 768px) 22px, 24px" width="24" height="24" alt="" aria-hidden="true" draggable="false" decoding="async"><span class="nav-label">المفضلة</span></button>
+<button data-nav="plan"><img class="brand-icon " data-icon="plan" src="assets/ahlan-ui-icons/64/plan.webp" srcset="assets/ahlan-ui-icons/32/plan.webp 32w, assets/ahlan-ui-icons/64/plan.webp 64w, assets/ahlan-ui-icons/128/plan.webp 128w, assets/ahlan-ui-icons/256/plan.webp 256w" sizes="(min-width: 768px) 22px, 24px" width="24" height="24" alt="" aria-hidden="true" draggable="false" decoding="async"><span class="nav-label">خطتي</span></button>
+<button data-nav="profile"><img class="brand-icon " data-icon="profile" src="assets/ahlan-ui-icons/64/profile.webp" srcset="assets/ahlan-ui-icons/32/profile.webp 32w, assets/ahlan-ui-icons/64/profile.webp 64w, assets/ahlan-ui-icons/128/profile.webp 128w, assets/ahlan-ui-icons/256/profile.webp 256w" sizes="(min-width: 768px) 22px, 24px" width="24" height="24" alt="" aria-hidden="true" draggable="false" decoding="async"><span class="nav-label">حسابي</span></button>
 </nav>
-<button class="lang" onclick="showLanguages()" aria-label="اللغة: العربية"><img class="brand-icon" data-icon="language" width="24" height="24" src="assets/ahlan-ui-icons/64/language.webp" srcset="assets/ahlan-ui-icons/32/language.webp 32w, assets/ahlan-ui-icons/64/language.webp 64w, assets/ahlan-ui-icons/128/language.webp 128w" sizes="24px" alt="" aria-hidden="true"><span class="lang-label">العربية</span><span class="lang-chevron">⌄</span></button>
-<button class="avatar" onclick="profile()" aria-label="حسابي">☺</button>
+<button class="lang" onclick="showLanguages()" aria-label="اللغة: العربية"><img class="brand-icon" data-icon="language" width="24" height="24" src="assets/ahlan-ui-icons/64/language.webp" srcset="assets/ahlan-ui-icons/32/language.webp 32w, assets/ahlan-ui-icons/64/language.webp 64w, assets/ahlan-ui-icons/128/language.webp 128w" sizes="24px" alt="" aria-hidden="true"><span class="lang-label">العربية</span><span class="lang-chevron"><span class="brand-replaced"><img class="brand-icon rotate-down" data-icon="arrow" src="assets/ahlan-ui-icons/64/arrow.webp" srcset="assets/ahlan-ui-icons/32/arrow.webp 32w, assets/ahlan-ui-icons/64/arrow.webp 64w, assets/ahlan-ui-icons/128/arrow.webp 128w, assets/ahlan-ui-icons/256/arrow.webp 256w" sizes="22px" width="22" height="22" alt="" aria-hidden="true" draggable="false" decoding="async"></span></span></button>
+<button class="avatar" onclick="profile()" aria-label="حسابي"><img class="brand-icon " data-icon="profile" src="assets/ahlan-ui-icons/64/profile.webp" srcset="assets/ahlan-ui-icons/32/profile.webp 32w, assets/ahlan-ui-icons/64/profile.webp 64w, assets/ahlan-ui-icons/128/profile.webp 128w, assets/ahlan-ui-icons/256/profile.webp 256w" sizes="24px" width="24" height="24" alt="" aria-hidden="true" draggable="false" decoding="async"></button>
 </div>
 </header>
 <main id="main">
@@ -57,6 +69,7 @@
 </p>
 <div id="appStatus" class="sr-only" role="status" aria-live="polite">
 </div>
+<div id="welcome" class="welcome-strip"><div><b>مرحباً بك في مصر! <span class="brand-replaced"><img class="brand-icon " data-icon="egypt" src="assets/ahlan-ui-icons/64/egypt.webp" srcset="assets/ahlan-ui-icons/32/egypt.webp 32w, assets/ahlan-ui-icons/64/egypt.webp 64w, assets/ahlan-ui-icons/128/egypt.webp 128w, assets/ahlan-ui-icons/256/egypt.webp 256w" sizes="22px" width="22" height="22" alt="" aria-hidden="true" draggable="false" decoding="async"></span></b><p>كل ما تحتاجه في مصر، في مكان واحد</p></div><button onclick="openContent(12)"><span class="brand-replaced"><img class="brand-icon " data-icon="emergency" src="assets/ahlan-ui-icons/64/emergency.webp" srcset="assets/ahlan-ui-icons/32/emergency.webp 32w, assets/ahlan-ui-icons/64/emergency.webp 64w, assets/ahlan-ui-icons/128/emergency.webp 128w, assets/ahlan-ui-icons/256/emergency.webp 256w" sizes="22px" width="22" height="22" alt="" aria-hidden="true" draggable="false" decoding="async"></span> الطوارئ</button></div>
 <h2 id="journeyChoicesTitle">كيف يمكننا مساعدتك؟</h2>
 <div class="tabs" aria-label="اختر قسمًا">
 <button class="tab active" data-tab="explore">اكتشف مصر</button>
@@ -65,7 +78,7 @@
 </div>
 <section id="journeyIntro" class="journey-intro" hidden></section>
 <label class="search">
-<span>⌕</span>
+<span><img class="brand-icon " data-icon="search" src="assets/ahlan-ui-icons/64/search.webp" srcset="assets/ahlan-ui-icons/32/search.webp 32w, assets/ahlan-ui-icons/64/search.webp 64w, assets/ahlan-ui-icons/128/search.webp 128w, assets/ahlan-ui-icons/256/search.webp 256w" sizes="22px" width="22" height="22" alt="" aria-hidden="true" draggable="false" decoding="async"></span>
 <input id="search" dir="auto" autocomplete="off" placeholder="ماذا تحتاج في مصر؟" aria-label="ابحث عن مكان أو خدمة">
 </label>
 <div id="home" lang="ar" dir="rtl">
@@ -129,7 +142,7 @@
 </div>
 </section>
 <section class="assist">
-<span class="symbol">✦</span>
+<span class="symbol"><img class="brand-icon " data-icon="assistant" src="assets/ahlan-ui-icons/64/assistant.webp" srcset="assets/ahlan-ui-icons/32/assistant.webp 32w, assets/ahlan-ui-icons/64/assistant.webp 64w, assets/ahlan-ui-icons/128/assistant.webp 128w, assets/ahlan-ui-icons/256/assistant.webp 256w" sizes="40px" width="40" height="40" alt="" aria-hidden="true" draggable="false" decoding="async"></span>
 <div>
 <h3>محتاج حد يدلّك؟</h3>
 <p>من أول سؤال لحد أول مشوار، إحنا معاك.</p>

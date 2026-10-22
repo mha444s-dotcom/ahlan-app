@@ -109,6 +109,7 @@ test('Publish stops before staging after failed validation or failed security ch
     { failCommand: (_, args) => args.includes('test:ci') },
     { failCommand: (_, args) => args.includes('Prepare-Release.cjs') },
     { failCommand: (_, args) => args.includes('browser-pages.cjs') },
+    { failCommand: (_, args) => args.includes('browser-startup.cjs') },
     { reports: [{ findings: [{ file: '.env', rule: 'forbidden-path' }] }] }
   ]) {
     const run = publishDouble(configuration);

@@ -3,7 +3,7 @@
 // Bump this release whenever deployed HTML, CSS, JavaScript, or local data change.
 // Installation commits the complete shell before it can become active. An update
 // waits for old app windows to close; it never replaces code beneath a live page.
-const VERSION = 'd2eb054109296b9a';
+const VERSION = 'be3abe0f00c5f95d';
 const BASE = new URL('./', self.location.href);
 const PREFIX = 'ahlan-pwa-' + encodeURIComponent(BASE.pathname) + '-';
 const SHELL_CACHE = PREFIX + VERSION + '-shell';

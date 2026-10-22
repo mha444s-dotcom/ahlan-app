@@ -24,6 +24,7 @@ async function publish(args=process.argv.slice(2)){
   run(process.execPath,['--run','test:ci']);
   run(process.execPath,['maintenance/github/Prepare-Release.cjs']);
   run(process.execPath,['tests/browser-pages.cjs','--local','--root','release/ahlan','--base-path','/','--canonical-html']);
+  run(process.execPath,['tests/browser-startup.cjs','--root','release/ahlan']);
   // Detect edits made during validation, rather than committing an untested edit.
   const before=checkFiles(gitFiles());
   if(before.findings.length||before.fingerprint!==report.fingerprint)throw Error('Source changed during validation. Nothing was committed or pushed; rerun after finishing edits.');

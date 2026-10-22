@@ -51,15 +51,13 @@ function decorateSharedSymbols(shadow) {
 }
 
 export async function mountDiscover(host) {
-  const markup = await textResource('page.html');
   const shadow = host.attachShadow({mode:'open'});
-  const fontTimer = {id:0};
-  const optionalFonts = Promise.race([
-    installDiscoverFonts(),
-    new Promise(resolve => { fontTimer.id = setTimeout(resolve, 2500); })
-  ]).finally(() => clearTimeout(fontTimer.id));
-  const loadingStyles = Promise.all([stylesheet(shadow, 'page.css'), stylesheet(shadow, 'native.css'), stylesheet(shadow, 'quality.css'), stylesheet(shadow, 'enhancements.css'), optionalFonts]);
-  await loadingStyles;
+  // Fetch the template and its styles concurrently. Remote swap-fonts must not
+  // hold the native page behind an optional network dependency (also offline).
+  void installDiscoverFonts();
+  const [markup] = await Promise.all([textResource('page.html'),
+    stylesheet(shadow, 'page.css'), stylesheet(shadow, 'native.css'),
+    stylesheet(shadow, 'quality.css'), stylesheet(shadow, 'enhancements.css')]);
   const localDocument = document.createElement('div'); localDocument.dataset.discoverDocument = ''; localDocument.dir = 'rtl';
   const body = document.createElement('div'); body.dataset.discoverBody = ''; body.innerHTML = markup;
   const anchorSlot = document.createElement('slot'); anchorSlot.name = 'anchor';

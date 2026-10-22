@@ -133,7 +133,9 @@ test('three journeys expose genuinely different content without filtering origin
   f.run("navigate({view:'journey',tab:'inside'})"); const inside=f.element('#journeyPage').innerHTML;
   assert.notEqual(outside,inside); assert.ok(inside.includes('openContent(6,2)'));
   assert.equal(f.run('new Set(ahlanJourneys.inside.groups.flatMap(c=>c.refs.map(r=>r.join(":")))).size'),46);
-  f.run("navigate({view:'journey',tab:'explore'})"); assert.equal(f.element('#home').hidden,false); assert.equal(f.element('#journeyPage').hidden,true);
+  f.run("navigate({view:'journey',tab:'explore'})"); assert.equal(f.element('#home').hidden,true); assert.equal(f.element('#journeyPage').hidden,true);
+  assert.equal(f.element('#services').innerHTML,'','Discover does not render the inactive home catalogue');
+  f.run('homeScreen()');
   for(let i=0;i<14;i++) assert.ok(f.element('#services').innerHTML.includes(`openContent(${i})`));
 });
 

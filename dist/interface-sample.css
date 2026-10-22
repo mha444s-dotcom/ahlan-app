@@ -334,16 +334,6 @@ body[data-design-sample="tourism"] .sample-meta > span { color: #fff8ed; backgro
 }
 
 /* Journey navigation: same palette and assets, compact at 320px, logical RTL/LTR. */
-/* Explore-only presentation. Original DOM, protected service images, assistance
-   and footer stay intact; the landing page and other journeys are untouched. */
-body[data-explore-prototype="true"] #home > .home-discovery,
-body[data-explore-prototype="true"] #home > #experiences,
-body[data-explore-prototype="true"] #home > #editorial { display: none; }
-body[data-explore-prototype="true"] #journeyIntro { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 4px 12px; margin-block: 0 14px; padding: 0; }
-body[data-explore-prototype="true"] #journeyIntro h1 { grid-column: 1; grid-row: 1; margin: 0; font-size: 1.375rem; }
-body[data-explore-prototype="true"] #journeyIntro .back { grid-column: 2; grid-row: 1; margin: 0; min-block-size: 44px; padding-block: 8px; font-size: .75rem; }
-body[data-explore-prototype="true"] #journeyIntro > :is(p,small) { grid-column: 1 / -1; margin: 0; font-size: .8125rem; line-height: 1.8; }
-body[data-explore-prototype="true"] .search { margin-block-end: 14px; }
 #journeyChoicesTitle { margin: 0 0 12px; font-size: clamp(1.05rem,2.4vw,1.4rem); }
 body .tabs, body[data-design-sample="home"] .tabs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); inline-size: 100%; gap: 6px; padding: 4px; background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 14px; }
 body .tabs .tab, body[data-design-sample="home"] .tabs .tab { min-inline-size: 0; min-block-size: 48px; padding: 10px 3px; font-size: clamp(.75rem,2.3vw,1rem); line-height: 1.5; border-radius: 10px; overflow-wrap: anywhere; font-weight: 800; }

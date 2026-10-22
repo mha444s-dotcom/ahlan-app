@@ -110,3 +110,13 @@ body[data-design-sample="home"] main .service small { font-size: .75rem; line-he
 
 /* Existing sample variants explicitly set credit text to 9–10px. */
 body[data-design-sample]:not([data-design-sample=""]) :is(main,.modal) .photo-credit { font-size: .75rem; line-height: 1.85; }
+
+/* Only the initial route's content can paint while deferred scripts arrive.
+   The header and current home remain visible; no page-wide loading curtain. */
+html[data-startup-view]:not([data-startup-view="home"]):not([data-startup-view="saved"]):not([data-startup-view="plan"]) #home,
+html[data-startup-view]:not([data-startup-view="home"]) :is(#welcome,#journeyChoicesTitle),
+html:is([data-startup-view="saved"],[data-startup-view="plan"],[data-startup-view="gallery"],[data-startup-view="trust"],[data-startup-view="legacy"]) .tabs,
+html:is([data-startup-view="section"],[data-startup-view="trust"],[data-startup-view="legacy"]) main > .search { display: none !important; }
+/* Keep the current white Explore canvas down to the viewport while its native
+   component arrives, rather than exposing the base document's sand fallback. */
+body[data-explore-prototype="true"] { min-block-size: 100dvh; }

@@ -23,7 +23,9 @@ Ahlan.sections = [
 
 function render() {
   if (Ahlan.state.view === 'journey' && Ahlan.state.tab !== 'explore') { renderJourneyDirectory(); return; }
-  if (isExplorePrototype()) { renderServices(); renderExplorePrototype(); return; }
+  if (isExplorePrototype()) { renderExplorePrototype(); return; }
+  if (Ahlan.state.view === 'gallery') { renderGalleryCards(); return; }
+  if (!['home','saved','plan'].includes(Ahlan.state.view)) return;
   renderServices(); renderRealFilters(); renderRealCards(); renderGalleryCards();
 }
 function journeyKey(value) { return value === 'live' ? 'inside' : Object.hasOwn(window.ahlanJourneys,value) ? value : 'explore'; }
@@ -71,9 +73,9 @@ function renderJourneyChrome() {
   $('.lang').setAttribute('aria-label',locale === 'en' ? 'Language: English' : 'اللغة: العربية');
   $('#search').placeholder = journeyText(window.ahlanJourneyCopy.search);
   $('#search').setAttribute('aria-label',journeyText(window.ahlanJourneyCopy.search));
-  $('#journeyIntro').hidden = !isJourney;
+  $('#journeyIntro').hidden = !isJourney || Ahlan.state.tab === 'explore';
   $('#journeyPage').hidden = !isJourney || Ahlan.state.tab === 'explore';
-  if (isJourney) {
+  if (isJourney && Ahlan.state.tab !== 'explore') {
     const journey = window.ahlanJourneys[Ahlan.state.tab];
     $('#journeyIntro').innerHTML = `<button class="back" onclick="homeScreen()">${esc(journeyText(window.ahlanJourneyCopy.home))}</button><h1>${esc(journeyText(journey.title))}</h1><p>${esc(journeyText(journey.description))}</p>${Ahlan.state.tab !== 'explore' ? `<small>${esc(journeyText(window.ahlanJourneyCopy.original))}</small>` : ''}${locale === 'en' ? `<small>${esc(journeyText(window.ahlanJourneyCopy.languageNote))}</small>` : ''}`;
   }
@@ -89,7 +91,7 @@ function renderRoute(scroll = false) {
   document.body.dataset.designSample = state.view === 'home' || atExplore ? 'home' :
     state.view === 'section' && state.section === 0 ? 'government' :
     state.view === 'section' && state.section === 9 ? 'tourism' : '';
-  $('#home').hidden = !atHome && !atExplore;
+  $('#home').hidden = !atHome;
   $('.search').hidden = !atHome && state.view !== 'gallery' && state.view !== 'journey';
   $('#welcome').hidden = state.view !== 'home';
   $('#sectionPage').classList.toggle('visible', ['section','trust','legacy'].includes(state.view));
@@ -355,13 +357,11 @@ function initializeApp() {
   loadStoredData(); setupModal(); setupNavigation();
   const journey = document.createElement('section'); journey.id = 'journeyPage'; journey.hidden = true; $('main').append(journey);
   const section = document.createElement('section'); section.id = 'sectionPage'; section.className = 'section-page'; section.lang = 'ar'; section.dir = 'rtl'; $('main').append(section);
-  const welcome = document.createElement('div'); welcome.id = 'welcome'; welcome.className = 'welcome-strip';
-  welcome.innerHTML = '<div><b>مرحباً بك في مصر! 🇪🇬</b><p>كل ما تحتاجه في مصر، في مكان واحد</p></div><button onclick="openContent(12)">🚨 الطوارئ</button>';
-  $('#journeyChoicesTitle').before(welcome);
   const footer = document.createElement('div'); footer.className = 'footerlinks';
   footer.innerHTML = `<button onclick="service(\'التقييمات والثقة\')">${brandIcon('shield')} الثقة والأمان</button><button onclick="service(\'مساعدة شخصية\')">${brandIcon('support')} المساعدة الشخصية</button><button onclick="businessInfo()">الشراكات وخدمات Premium</button><button onclick="visionInfo()">عن أهلاً ورؤيتنا</button>`;
   $('#home').append(footer);
-  setupServiceCarousel(); setupExperienceGallery(); setupBrandIcons();
+  setupServiceCarousel(); setupExperienceGallery();
+  if (!$('.nav').querySelector('.brand-icon')) setupBrandIcons();
   setupExplorePrototype();
   $('#search').placeholder = 'ابحث عن أي خدمة، مستند أو مكان...';
   let searchFrame = 0;
@@ -389,5 +389,6 @@ function initializeApp() {
     render();
   });
   Object.assign(Ahlan.state,readRoute()); renderRoute(); decorateBrandIcons(document.body);
+  delete document.documentElement.dataset.startupView;
 }
 initializeApp();

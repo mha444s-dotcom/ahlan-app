@@ -8,7 +8,7 @@
     "test:production": "node --test tests/production-build.cjs tests/production-package.cjs",
     "preview": "node maintenance/production/Preview-Release.cjs",
     "test": "node --test tests/production-build.cjs tests/production-package.cjs tests/production-images.cjs tests/discover-source.cjs tests/test-cache-cleanup.cjs",
-    "test:ci": "node --test tests/regression.cjs tests/ui-layout.cjs tests/header-scroll.cjs tests/native-runtime.cjs tests/discover-resources.cjs tests/discover-quality.cjs tests/discover-dead-styles.cjs tests/pwa.cjs tests/discover-source.cjs tests/production-build.cjs tests/production-images.cjs tests/production-package.cjs tests/test-cache-cleanup.cjs tests/github-workflow.cjs tests/github-publish.cjs tests/cloudflare-deployment.cjs",
+    "test:ci": "node --test tests/regression.cjs tests/ui-layout.cjs tests/header-scroll.cjs tests/native-runtime.cjs tests/discover-resources.cjs tests/discover-quality.cjs tests/discover-dead-styles.cjs tests/pwa.cjs tests/discover-source.cjs tests/production-build.cjs tests/production-images.cjs tests/production-package.cjs tests/test-cache-cleanup.cjs tests/github-workflow.cjs tests/github-publish.cjs tests/cloudflare-deployment.cjs tests/startup.cjs",
     "check:publish": "node maintenance/github/Check-Publish.cjs",
     "build:update": "node maintenance/github/Prepare-Release.cjs",
     "ship": "node maintenance/github/Publish.cjs",
