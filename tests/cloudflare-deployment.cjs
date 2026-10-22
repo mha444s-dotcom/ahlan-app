@@ -13,6 +13,9 @@ test('Cloudflare checks belong to the exact commit, official GitHub app and Ahla
  assert.equal(run.api.projectChecks([good],sha).length,1);
  for(const change of [{head_sha:other},{app:{slug:'unrelated-app'}},{name:'Another project',details_url:'https://dash.cloudflare.com/account/pages/view/another/deploy'},{name:'ahlan-app-other',details_url:'https://attacker.test/ahlan-app'}])assert.equal(run.api.projectChecks([{...good,...change}],sha).length,0);
  assert.equal(run.api.isProjectDetails('https://dash.cloudflare.com.evil.test/pages/view/ahlan-app/123'),false);
+ assert.equal(run.api.isProjectDetails('https://dash.cloudflare.com/?to=/0123456789abcdef0123456789abcdef/pages/view/ahlan-app/deployment'),true);
+ assert.equal(run.api.projectChecks([{...good,name:'Cloudflare Pages',details_url:'https://dash.cloudflare.com/?to=/0123456789abcdef0123456789abcdef/pages/view/ahlan-app/deployment'}],sha).length,1);
+ for(const bad of ['https://dash.cloudflare.com/?to=https://evil.test/pages/view/ahlan-app/deployment','https://dash.cloudflare.com/?to=//evil.test/pages/view/ahlan-app/deployment','https://dash.cloudflare.com/?to=/account/pages/view/another/deployment'])assert.equal(run.api.isProjectDetails(bad),false);
 });
 test('Invalid commit stops before credentials or network; a successful exact deployment is verified live',async()=>{
  const bad=load();await assert.rejects(bad.api.waitCloudflare('short'));assert.equal(bad.credentials,0);assert.equal(bad.calls.length,0);

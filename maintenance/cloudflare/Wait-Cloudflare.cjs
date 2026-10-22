@@ -8,7 +8,16 @@ function projectChecks(checks,sha){
     .sort((a,b)=>b.id-a.id);
 }
 function isProjectDetails(value){
-  try{const url=new URL(value);return url.origin==='https://dash.cloudflare.com'&&url.pathname.split('/').includes('ahlan-app');}catch{return false;}
+  try{
+    const url=new URL(value);
+    if(url.origin!=='https://dash.cloudflare.com'||url.username||url.password)return false;
+    const target=url.searchParams.get('to');
+    if(target!==null&&(!target.startsWith('/')||target.startsWith('//')))return false;
+    const location=target===null?url:new URL(target,url.origin);
+    if(location.origin!==url.origin)return false;
+    const parts=location.pathname.split('/').filter(Boolean),pages=parts.indexOf('pages');
+    return pages>=0&&parts[pages+1]==='view'&&parts[pages+2]==='ahlan-app';
+  }catch{return false;}
 }
 async function liveCommit(sha){
   const home=await fetch(PRODUCTION_URL,{cache:'no-store',redirect:'error',signal:AbortSignal.timeout(30000)});
